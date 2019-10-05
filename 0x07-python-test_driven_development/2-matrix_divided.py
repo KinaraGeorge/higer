@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """
-Divides all elements of a matrix
-
+Divide matrix:
+matrix_divided function
 """
-def matrix_divided(matrix, div):
 
+
+def matrix_divided(matrix, div):
+    """Divides the matrix"""
     err = 'matrix must be a matrix (list of lists) of integers/floats'
     if type(div) != int and type(div) != float:
         raise TypeError('div must be a number')
