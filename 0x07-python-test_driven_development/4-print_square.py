@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-"""
+"""A module containing a function to print a square"""
 
-A function to print a square
-
-"""
 
 def print_square(size):
     """Print a square made of #"""
@@ -11,6 +8,6 @@ def print_square(size):
         raise TypeError("size must be an integer")
     if size < 0:
         raise ValueError("size must be >= 0")
-    stra = '#' * size
+    string = '#' * size
     for x in range(size):
-        print(stra)
+        print(string)
