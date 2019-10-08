@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-"""Matrix multiply module"""
+"""
+Matrix multiply module
+"""
 
 
 def matrix_mul(m_a, m_b):
+    """Multiplies matrix"""
     if type(m_a) != list:
         raise TypeError('m_a must be a list')
 
