@@ -1,78 +1,80 @@
 >>> matrix_mul = __import__('100-matrix_mul').matrix_mul
 
->>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+
+>>> print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
 [[7, 10], [15, 22]]
 
->>> matrix_mul([[1, 2]], [[1, 2], [3, 4]])
-[[7, 10]]
 
->>> matrix_mul([[1, 2], [3, 4]], [[1, 2]])
-Traceback (most recent call last):
-ValueError: m_a and m_b can't be multiplied
+>>> print(matrix_mul([[1, 2]], [[3, 4], [5, 6]]))
+[[13, 16]]
 
->>> matrix_mul([[]], [[]])
-Traceback (most recent call last):
-ValueError: m_a can't be empty
 
->>> matrix_mul([[1,2]], [[]])
-Traceback (most recent call last):
-ValueError: m_b can't be empty
-
->>> matrix_mul([[1, 2.2], [.653, 4]], [[1.7, 2], [3, 4.1]])
-[[8.3, 11.02], [13.1101, 17.706]]
-
->>> matrix_mul(1, "str")
+>>> print(matrix_mul(32, 12))
 Traceback (most recent call last):
 TypeError: m_a must be a list
 
->>> matrix_mul([[1,2]], "str")
+
+>>> print(matrix_mul([1, 32], 12))
 Traceback (most recent call last):
 TypeError: m_b must be a list
 
->>> matrix_mul([1,2], "str")
+
+>>> print(matrix_mul([1, 32], [2, 3]))
 Traceback (most recent call last):
 TypeError: m_a must be a list of lists
 
->>> matrix_mul([[1,2]], [1,2])
+
+>>> print(matrix_mul([[1, 32]], [2, 3]))
 Traceback (most recent call last):
 TypeError: m_b must be a list of lists
 
->>> matrix_mul([[1,2]], [[1,2]])
-Traceback (most recent call last):
-ValueError: m_a and m_b can't be multiplied
 
->>> matrix_mul(None, [[]])
+>>> print(matrix_mul([[]], [2, 3]))
 Traceback (most recent call last):
-TypeError: m_a must be a list
+TypeError: m_b must be a list of lists
 
->>> matrix_mul([[1,2]], None)
+
+>>> print(matrix_mul([[12, 21]], [[]]))
 Traceback (most recent call last):
-TypeError: m_b must be a list
+ValueError: m_b can't be empty
 
->>> matrix_mul([["s",2]], [[1,2]])
+
+>>> print(matrix_mul([["he", 21]], [[21, 26]]))
 Traceback (most recent call last):
 TypeError: m_a should contain only integers or floats
 
->>> matrix_mul([[1,2]], [["s",2]])
+
+
+>>> print(matrix_mul([[312, 21]], [["Hi", 26]]))
 Traceback (most recent call last):
 TypeError: m_b should contain only integers or floats
 
->>> matrix_mul([[1,2],[1,2, 3]], [[1,2]])
+
+>>> print(matrix_mul([[312, 21], [1, 43, -3]], [[21, 26]]))
 Traceback (most recent call last):
 TypeError: each row of m_a must should be of the same size
 
->>> matrix_mul([[1,2],[1,2]], [[1,2], [1,2,3]])
+
+>>> print(matrix_mul([[312, 21, 2], [1, 43, -3]], [[21, 26], [2, 1, 21, 21]]))
 Traceback (most recent call last):
 TypeError: each row of m_b must should be of the same size
 
->>> matrix_mul("Hello", "World")
-Traceback (most recent call last):
-TypeError: m_a must be a list
 
->>> matrix_mul([[1,2]], "World")
+>>> print(matrix_mul([[312, 21, 2], [1, 43, -3]], [[21, 26], [2, 1]]))
 Traceback (most recent call last):
-TypeError: m_b must be a list
+ValueError: m_a and m_b can't be multiplied
 
->>> matrix_mul("Hello", [[1,2], [1,2]])
+
+>>> print(matrix_mul([[]], [[3, 3], [3, 2]]))
 Traceback (most recent call last):
-TypeError: m_a must be a list
+ValueError: m_a can't be empty
+
+
+>>> print(matrix_mul())
+Traceback (most recent call last):
+TypeError: matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
+
+
+>>> print(matrix_mul([[2, 3, 4], [3, 4, 2]]))
+Traceback (most recent call last):
+TypeError: matrix_mul() missing 1 required positional argument: 'm_b'
