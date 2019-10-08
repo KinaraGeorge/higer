@@ -3,7 +3,6 @@
 
 
 def matrix_mul(m_a, m_b):
-    """Multiplies two matrices"""
     if type(m_a) is not list:
         raise TypeError("m_a must be a list")
     if type(m_b) is not list:
