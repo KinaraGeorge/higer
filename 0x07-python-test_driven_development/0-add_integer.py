@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-
 '''
    0-add_integer function
    Contains a function that adds two integers
