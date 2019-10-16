@@ -21,3 +21,7 @@ Doctests for 1-my_list
 >>> my_list.append(0)
 >>> print(my_list)
 [1, 4, 2, 3, 5, -5, 0]
+>>> my_list.print_sorted()
+[-5, 0, 1, 2, 3, 4, 5]
+>>> print(my_list)
+[1, 4, 2, 3, 5, -5, 0]
