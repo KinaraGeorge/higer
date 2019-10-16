@@ -2,9 +2,6 @@
 
 
 def add_attribute(obj, name, value):
-    if type(name) is not str:
+    if not hasattr(obj, '__dict__'):
         raise TypeError("can't add new attribute")
-    try:
-        exec("obj.{} = value".format(name))
-    except:
-        raise TypeError("can't add new attribute")
+    setattr(obj, key, value)
