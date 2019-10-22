@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-This module contains the class Base
-"""
+
 import json
 import csv
 import turtle
@@ -9,15 +7,11 @@ import random
 
 
 class Base:
-    """
-    This class contains the private attribute nb objects and a constructor
-    """
+
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """
-        constructs id based on input
-        """
+
         if id is not None:
             self.id = id
         else:
@@ -26,27 +20,21 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """
-        Returns an input dictionary as JSON
-        """
+
         if list_dictionaries is None:
             return "[]"
         return json.dumps(list_dictionaries)
 
     @staticmethod
     def from_json_string(json_string):
-        """
-        Reverts from json string
-        """
+
         if json_string is None:
             return []
         return json.loads(json_string)
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """
-        Saves a JSON string to a file
-        """
+
         strings = []
         if list_objs is not None:
             for i in list_objs:
@@ -56,9 +44,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """
-        Creates a new instance of cls and returns updated values
-        """
+
         if cls.__name__ == "Rectangle":
             dummy = cls(1, 1)
         if cls.__name__ == "Square":
@@ -69,9 +55,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """
-        Load information from a file and create proper class instances
-        """
+
         lists = []
         try:
             with open(cls.__name__ + ".json", "r", encoding="utf-8") as opened:
@@ -84,9 +68,7 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
-        """
-        Save to a csv format
-        """
+
         if cls.__name__ == "Rectangle":
             fields = ["id", "width", "height", "x", "y"]
         if cls.__name__ == "Square":
@@ -106,9 +88,7 @@ class Base:
 
     @classmethod
     def load_from_file_csv(cls):
-        """
-        Load data from a csv file
-        """
+
         lists = []
         try:
             with open("{}.csv".format(cls.__name__), newline='') as opened:
@@ -124,9 +104,7 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        """
-        Draw shapes in rainbow
-        """
+
         turtle.colormode(255)
 
         def color(x, y):
