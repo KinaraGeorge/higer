@@ -13,6 +13,7 @@ from io import StringIO
 
 class TestRectangleClass(unittest.TestCase):
 
+
     @classmethod
     def setUpClass(cls):
 
