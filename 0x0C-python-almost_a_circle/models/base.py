@@ -13,3 +13,8 @@ class Base():
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def reset():
+
+        Base._Base__nb_objects = 0
