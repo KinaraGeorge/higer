@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 
 import json
-import csv
-import turtle
-import random
 
 
-class Base:
+class Base():
+
 
     __nb_objects = 0
 
@@ -21,128 +19,67 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
 
-        if list_dictionaries is None:
+        if list_dictionaries is None or len(list_dictionaries) is 0:
             return "[]"
         return json.dumps(list_dictionaries)
-
-    @staticmethod
-    def from_json_string(json_string):
-
-        if json_string is None:
-            return []
-        return json.loads(json_string)
 
     @classmethod
     def save_to_file(cls, list_objs):
 
-        strings = []
-        if list_objs is not None:
+        temp = []
+        if list_objs is None or len(list_objs) is 0:
+            pass
+        else:
             for i in list_objs:
-                strings.append(cls.to_dictionary(i))
-        with open(cls.__name__ + ".json", 'w') as open_file:
-            open_file.write(cls.to_json_string(strings))
+                temp.append(cls.to_dictionary(i))
+        x = cls.to_json_string(temp)
+        with open("{}.json".format(cls.__name__),
+                  mode='w', encoding='utf-8') as f:
+            f.write(x)
+
+    @staticmethod
+    def from_json_string(json_string):
+
+        if json_string is None or len(json_string) is 0:
+            return []
+        return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
 
         if cls.__name__ == "Rectangle":
-            dummy = cls(1, 1)
+            temp = cls(width=6, height=9)
         if cls.__name__ == "Square":
-            dummy = cls(1)
-        dummy.update(**dictionary)
+            temp = cls(size=69)
+        temp.update(**dictionary)
 
-        return dummy
+        return temp
 
     @classmethod
     def load_from_file(cls):
 
-        lists = []
+        temp = []
         try:
-            with open(cls.__name__ + ".json", "r", encoding="utf-8") as opened:
-                lists = cls.from_json_string(opened.read())
-            for i in range(len(lists)):
-                lists[i] = cls.create(**lists[i])
-            return lists
-        except Exception:
-            return lists
+            with open("{}.json".format(
+                    cls.__name__), "r", encoding='utf-8') as f:
+                temp2 = cls.from_json_string(f.read())
+        except:
+            return []
+        for i in temp2:
+            temp.append(cls.create(**i))
+        return temp
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
 
-        if cls.__name__ == "Rectangle":
-            fields = ["id", "width", "height", "x", "y"]
-        if cls.__name__ == "Square":
-            fields = ["id", "size", "x", "y"]
-
-        with open("{}.csv".format(cls.__name__), 'w')as opened:
-
-            if list_objs is None:
-                le_writer = csv.writer(opened)
-                le_writer.writerow([[]])
-
-            else:
-                le_writer = csv.DictWriter(opened, fieldnames=fields)
-                le_writer.writeheader()
-                for i in list_objs:
-                    le_writer.writerow(i.to_dictionary())
+        pass
 
     @classmethod
     def load_from_file_csv(cls):
 
-        lists = []
-        try:
-            with open("{}.csv".format(cls.__name__), newline='') as opened:
-                dict_reader = csv.DictReader(opened)
-                for i in dict_reader:
-                    for key, value in i.items():
-                        i[key] = int(value)
-                    dummy = cls.create(**i)
-                    lists.append(dummy)
-                return lists
-        except Exception:
-            return lists
+        pass
 
     @staticmethod
     def draw(list_rectangles, list_squares):
 
-        turtle.colormode(255)
-
-        def color(x, y):
-            R = random.randint(0, 256)
-            G = random.randint(0, 256)
-            B = random.randint(0, 256)
-            turtle.pencolor(R, G, B)
-            turtle.left(90)
-        for i in list_rectangles:
-            cnt = 0
-            x = i.x
-            y = i.y
-            width = i.width
-            height = i.height
-
-            turtle.setpos(x, y)
-            turtle.pendown()
-            while cnt < 5:
-                if cnt % 2 == 0:
-                    turtle.fd(height)
-                else:
-                    turtle.fd(width)
-                color(x, y)
-                cnt += 1
-            turtle.penup()
-
-        for i in list_squares:
-            cnt = 0
-            x = i.x
-            y = i.y
-            size = i.size
-
-            turtle.setpos(x, y)
-            turtle.pendown()
-            while cnt < 5:
-                turtle.fd(size)
-                color(x, y)
-                cnt += 1
-            turtle.penup()
-
-        turtle.exitonclick()
+        pass

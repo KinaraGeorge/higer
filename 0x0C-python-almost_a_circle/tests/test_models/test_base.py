@@ -1,44 +1,121 @@
 #!/usr/bin/python3
+""" Unit tests for models/base.py """
 
-import unittest
 from models.base import Base
+import unittest
 
 
-class TestBaseClass(unittest.TestCase):
+class Test_Base(unittest.TestCase):
 
-    def test_doctest(self):
+    def test_simple(self):
+        """ simplest test cases """
+        x = Base(1)
+        self.assertEqual(1, x.id)
+        self.assertNotEqual(99, x.id)
+        x = Base(99)
+        self.assertEqual(x.id, 99)
 
-        self.assertIsNotNone(Base.__doc__)
+    def test_InputErrors(self):
+        """ tests for input error """
+        with self.assertRaises(AttributeError):
+            self.assertIsEqual(x(), 1)
 
-    def test_base_class(self):
+    def test_empty(self):
+        """ test empty conditions """
+        x = Base()
+        self.assertEqual(1, x.id)
+        x = Base(None)
+        self.assertEqual(2, x.id)
+        x = Base(None)
+        self.assertEqual(3, x.id)
+        x = Base(7)
+        self.assertEqual(7, x.id)
 
-        test = Base()
-        self.assertTrue(issubclass(type(test), Base))
+    def test_string(self):
+        """ tests strings """
+        x = Base(2)
+        self.assertEqual(2, x.id)
+        x = Base("2")
+        self.assertEqual('2', x.id)
 
-    def test_base_combined(self):
+    def test_float(self):
+        """ test floats """
+        x = Base(3)
+        self.assertEqual(3, x.id)
+        x = Base(3.45)
+        self.assertEqual(3.45, x.id)
+        x = Base(-4.56)
+        self.assertEqual(-4.56, x.id)
 
-        initial = Base()
-        one = initial.id
-        initial_one = Base(75)
-        two = Base()
-        self.assertTrue(one + 1, two.id)
+    def test_weird(self):
+        """ test wtf things """
+        x = Base(4)
+        self.assertEqual(4, x.id)
+        x = Base([1, 2])
+        self.assertEqual([1, 2], x.id)
+        x = Base([1, "2"])
+        self.assertEqual([1, '2'], x.id)
+        x = Base([1, [1, 2]])
+        self.assertEqual([1, [1, 2]], x.id)
+        x = Base({"perro": 2})
+        self.assertEqual({"perro": 2}, x.id)
+        x = Base((1, 2))
+        self.assertEqual((1, 2), x.id)
+        x = Base(1)
+        self.assertEqual(1, x.id)
+        x = Base()
+        self.assertEqual(6, x.id)
 
-    def test_base_empty_id(self):
+    def test_more_errors(self):
+        """ more error checking """
+        x = Base(float('inf'))
+        self.assertEqual(float('inf'), x.id)
+        x = Base(float('NaN'))
+        self.assertNotEqual(float('NaN'), x.id)
+        with self.assertRaises(ValueError):
+            x = Base(float('bob'))
+        with self.assertRaises(ValueError):
+            x = Base(int('goku'))
+        x = Base()
+        self.assertEqual(4, x.id)
+        x = Base(float('inf'))
+        self.assertEqual(float('inf'), x.id)
+        x = Base(float('inf'))
+        self.assertEqual(float('inf'), x.id)
+        x = Base(float('inf'))
+        self.assertEqual(float('inf'), x.id)
+        x = Base(float('inf'))
+        self.assertEqual(float('inf'), x.id)
+        x = Base(float('inf'))
+        self.assertEqual(float('inf'), x.id)
+        x = Base(float('inf'))
+        self.assertEqual(float('inf'), x.id)
+        x = Base(float('inf'))
+        self.assertEqual(float('inf'), x.id)
+        x = Base()
+        self.assertEqual(5, x.id)
 
-        b1 = Base()
-        self.assertEqual(b1.id, 4)
-        b2 = Base()
-        self.assertEqual(b2.id, 5)
-        b3 = Base()
-        self.assertEqual(b3.id, 6)
+        def test_id(self):
+            """ tests the if id works properly """
+            goku = Base()
+            gokuID = goku.id
+            goku2 = Base(69)
+            goku3 = Base(100)
+            goku4 = Base()
+            self.assertTrue(gokuID, 1)
+            self.assertEqual(gokuID, 1)
+            self.assertFalse(gokuID, goku4.id)
+            self.assertTrue(gokuID + 1, goku4.id)
+            self.assertFalse(goku2, goku3)
+            seld.assertEqual(goku3.id, 100)
 
-    def test_base_normal(self):
+        def test_class(self):
+            """ tests subclass """
+            goku = Base()
+            self.assertTrue(issubclass(type(goku), Base))
 
-        b4 = Base(12)
-        self.assertEqual(b4.id, 12)
-        b5 = Base(2)
-        self.assertEqual(b5.id, 2)
+        def test_to_json_string(self):
+            pass
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
