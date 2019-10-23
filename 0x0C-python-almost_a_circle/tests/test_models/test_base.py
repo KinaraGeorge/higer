@@ -1,11 +1,12 @@
 #!/usr/bin/python3
+""" Unit tests base """
 
 from models.base import Base
 import unittest
 
 
 class Test_Base(unittest.TestCase):
-
+    """Tests for base class."""
     def test_simple(self):
 
         x = Base(1)

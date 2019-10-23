@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-
+""" rectangle module """
 
 from models.base import Base
 
 
 class Rectangle(Base):
-
+    """ class Rectangle inherits from Base """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-
+        """ initializer """
         super().__init__(id)
         self.width = width
         self.height = height
@@ -16,74 +16,74 @@ class Rectangle(Base):
         self.y = y
 
     def typeChecker(self, name, value):
-
+        """ integer validation check """
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
 
     def valueWHChecker(self, name, value):
-
+        """ width and height validation check """
         if value <= 0:
             raise ValueError("{} must be > 0".format(name))
 
     def valueXYChecker(self, name, value):
-
+        """ x and y validation check """
         if value < 0:
             raise ValueError("{} must be >= 0".format(name))
 
     @property
     def width(self):
-
+        """ getter width """
         return self.__width
 
     @width.setter
     def width(self, value):
-
+        """ width setter, gets validated """
         self.typeChecker("width", value)
         self.valueWHChecker("width", value)
         self.__width = value
 
     @property
     def height(self):
-
+        """ getter height """
         return self.__height
 
     @height.setter
     def height(self, value):
-
+        """ height setter, gets validated """
         self.typeChecker("height", value)
         self.valueWHChecker("height", value)
         self.__height = value
 
     @property
     def x(self):
-
+        """ getter for x """
         return self.__x
 
     @x.setter
     def x(self, value):
-
+        """ X setter, gets validated """
         self.typeChecker("x", value)
         self.valueXYChecker("x", value)
         self.__x = value
 
     @property
     def y(self):
-
+        """ getter for y """
         return self.__y
 
     @y.setter
     def y(self, value):
-
+        """ Y setter, gets validated """
         self.typeChecker("y", value)
         self.valueXYChecker("y", value)
         self.__y = value
 
     def area(self):
-
+        """ calcualtes the area """
         return self.width * self.height
 
     def display(self):
-
+        """ shows a display of #s """
         for i in range(self.y):
             print()
         for i in range(self.height):
@@ -95,13 +95,13 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-
+        """ overwrites the str """
         return("[{}] ({}) {}/{} - {}/{}".format(
             str(self.__class__.__name__), self.id, self.x,
             self.y, self.width, self.height))
 
     def update(self, *args, **kwargs):
-
+        """ the update function """
         if args is not None and len(args):
             for index, value in enumerate(args):
                 if index is 0:
@@ -130,7 +130,7 @@ class Rectangle(Base):
                     self.y = kwargs["y"]
 
     def to_dictionary(self):
-
+        """ returns the dict representation of a rect """
         temp = {}
         temp['id'] = self.id
         temp['width'] = self.width

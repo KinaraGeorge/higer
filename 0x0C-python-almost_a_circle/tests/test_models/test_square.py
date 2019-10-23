@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Unittest square"""
 
 from models.base import Base
 from models.rectangle import Rectangle
@@ -10,6 +11,7 @@ from io import StringIO
 
 
 class Test_Square(unittest.TestCase):
+    """Tests for square class."""
 
     def setUp(self):
 

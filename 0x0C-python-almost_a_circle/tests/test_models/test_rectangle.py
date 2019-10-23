@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Unit test for models/rectangle.py"""
 
 from models.base import Base
 from models.rectangle import Rectangle
@@ -9,6 +10,7 @@ import sys
 
 
 class Test_Rectangle(unittest.TestCase):
+    """Tests for rectangle class."""
 
     def setUp(self):
 
