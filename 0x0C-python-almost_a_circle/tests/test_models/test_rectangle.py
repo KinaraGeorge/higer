@@ -18,10 +18,6 @@ class Test_Rectangle(unittest.TestCase):
 
         pass
 
-    def test_docstring(self):
-
-        self.assertIsNotNone(Rectangle.__doc__)
-
     def test_simple(self):
 
         poop1 = Rectangle(1, 1)

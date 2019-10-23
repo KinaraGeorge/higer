@@ -19,10 +19,6 @@ class Test_Square(unittest.TestCase):
 
         pass
 
-    def test_docstring(self):
-
-        self.assertIsNotNone(Square.__doc__)
-
     def test_simple(self):
 
         poop1 = Square(1)
