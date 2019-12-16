@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Python scripte to list items from MySQL
+""" Python scripte to list items from MySQL"""
 
 import MySQLdb
 
