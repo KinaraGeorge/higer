@@ -2,15 +2,15 @@
 #python script
 
 
-import urllib.request as reque
-import urllib.parse as parse
+import urllib.request
+import urllib.parse
 import sys
 
 if __name__ == "__main__":
-    value = sys.argv[1]
-    dat = parse.urlencode({'email': sys.argv[2]}).encode('utf8')
+    post_url = sys.argv[1]
+    post_data = urllib.parse.urlencode({'email': sys.argv[2]}).encode('utf8')
 
-    with reque.urlopen(url=value, data=dat) as response:
+    with urllib.request.urlopen(url=post_url, data=post_data) as response:
         posted = response.read()
 
-    print(posted.decode('utf-8'))
+    print(posted.decode('utf8'))
