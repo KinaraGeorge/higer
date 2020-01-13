@@ -4,12 +4,13 @@
 
 import urllib.request as reque
 import urllib.parse as parse
-from sys import argv
+import sys
 
 if __name__ == "__main__":
-    value = argv[1]
-    data = parse.urlencode({'email':argv[2]}).encode('utf8')
+    value = sys.argv[1]
+    dat = parse.urlencode({'email': sys.argv[2]}).encode('utf8')
 
-    with reque.urlopen(value, data) as response:
+    with reque.urlopen(url=value, data=dat) as response:
         posted = response.read()
+
     print(posted.decode('utf-8'))
