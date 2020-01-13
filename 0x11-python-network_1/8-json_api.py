@@ -4,6 +4,7 @@
 import requests
 from sys import argv
 
+
 if __name__ == "__main__":
     if len(argv) < 2:
         letter = ""
@@ -15,9 +16,9 @@ if __name__ == "__main__":
     try:
         j = r.json()
 
-        if bool(j) is False:
+        if not j:
             print("No result")
         else:
-            print("[{}] {}".format(rdict['id'], rdict['name']))
+            print("[{}] {}".format(j['id'], j['name']))
     except:
         print('Not a valid JSON')
