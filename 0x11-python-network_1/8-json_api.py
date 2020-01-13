@@ -7,16 +7,19 @@ from sys import argv
 if __name__ == "__main__":
 
     letter = ""
-    if len(argv) == 2:
+    if len(argv) < 2:
+        letter = ""
+    else:
         letter = argv[1]
 
+    r = requests.post('http://0.0.0.0:5000/search_user', data={'q': letter})
+
     try:
-        r = requests.post('http://0.0.0.0:5000/search_user', data={'q': letter})
         j = r.json()
 
-        if j:
-            print('[{}] {}'.format(j.get('id'), j.get('name')))
+        if bool(j) is False:
+            print("No result")
         else:
-            print('No result')
+            print("[{}] {}".format(rdict['id'], rdict['name']))
     except:
         print('Not a valid JSON')
