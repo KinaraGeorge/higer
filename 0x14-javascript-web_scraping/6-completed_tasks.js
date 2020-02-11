@@ -6,7 +6,7 @@ request(url, function (err, response, body) {
     console.log(err);
   } else if (response.statusCode === 200) {
     let completed = {};
-    let tasks = JSON.parse(body);
+    const tasks = JSON.parse(body);
     for (let i in tasks) {
       let task = tasks[i];
       if (task.completed === true) {
