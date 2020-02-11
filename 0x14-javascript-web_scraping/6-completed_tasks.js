@@ -5,10 +5,10 @@ request(url, function (err, response, body) {
   if (err) {
     console.log(err);
   } else if (response.statusCode === 200) {
-    let completed = {};
+    const completed = {};
     const tasks = JSON.parse(body);
-    for (let i in tasks) {
-      let task = tasks[i];
+    for (const i in tasks) {
+      const task = tasks[i];
       if (task.completed === true) {
         if (completed[task.userId] === undefined) {
           completed[task.userId] = 1;
