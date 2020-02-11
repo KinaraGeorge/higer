@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const request = require('request');
-let final = {};
+const final = {};
 const indiv;
 request.get(process.argv[2], function (error, request, body) {
   if (error) {
