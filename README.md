@@ -1,6 +1,6 @@
  # Higher level programming :minidisc:
 
-  This repository contains project for the low level programming.
+  This repository contains project for the higher level programming.
 
   # Projects
   Projects | Date and time
