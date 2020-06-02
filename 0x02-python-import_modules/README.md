@@ -346,28 +346,34 @@ Remember how you did (or did not) do it in C? `#pythoniscool`
 
 Write a program that prints all the names defined by the compiled module [hidden_4.pyc](https://github.com/holbertonschool/0x02.py/raw/master/hidden_4.pyc) (please download it locally).
 
-You should print one name per line, in alpha order
-You should print only names that do not start with __
-Your code should not be executed when imported
-Make sure you are running your code in Python3.4.x (hidden_4.pyc has been compiled with this version)
+- You should print one name per line, in alpha order
+- You should print only names that do not start with `__`
+- Your code should not be executed when imported
+- Make sure you are running your code in Python3.4.x (`hidden_4.pyc` has been compiled with this version)
+
+```
 guillaume@ubuntu:~/0x02$ curl -Lso "hidden_4.pyc" "https://github.com/holbertonschool/0x02.py/raw/master/hidden_4.pyc"
 guillaume@ubuntu:~/0x02$ ./4-hidden_discovery.py | sort
 my_secret_santa
 print_holberton
 print_school
 guillaume@ubuntu:~/0x02$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x02-python-import_modules
-File: 4-hidden_discovery.py
+**Repo:**
 
-5. Everything can be imported mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a program that imports the variable a from the file variable_load_5.py and prints its value.
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x02-python-import_modules`
+* File: `4-hidden_discovery.py`
 
-You are not allowed to use * for importing or __import__
-Your code should not be executed when imported
+### [5. Everything can be imported](./5-variable_load.py)
+
+Write a program that imports the variable `a` from the file `variable_load_5.py` and prints its value.
+
+- You are not allowed to use `*` for importing or `__import__`
+- Your code should not be executed when imported
+
+```
 guillaume@ubuntu:~/0x02$ cat variable_load_5.py
 #!/usr/bin/python3
 a = 98
@@ -377,32 +383,36 @@ a = 98
 guillaume@ubuntu:~/0x02$ ./5-variable_load.py
 98
 guillaume@ubuntu:~/0x02$
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x02-python-import_modules
-File: 5-variable_load.py
+**Repo:**
 
-6. Build my own calculator! #advanced
-Score: 100.00% (Checks completed: 100.00%)
-Write a program that imports all functions from the file calculator_1.py and handles basic operations.
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x02-python-import_modules`
+* File: `5-variable_load.py`
 
-Usage: ./100-my_calculator.py a operator b
-If the number of arguments is not 3, your program has to:
-print Usage: ./100-my_calculator.py <a> <operator> <b> followed with a new line
-exit with the value 1
-operator can be:
-+ for addition
-- for subtraction
-* for multiplication
-/ for division
-If the operator is not one of the above:
-print Unknown operator. Available operators: +, -, * and / followed with a new line
-exit with the value 1
-You can cast a and b into integers by using int() (you can assume that all arguments will be castable into integers)
-The result should be printed like this: <a> <operator> <b> = <result>, followed by a new line
-You are not allowed to use * for importing or __import__
-Your code should not be executed when imported
+### [6. Build my own calculator! #advanced](./100-my_calculator.py)
+
+Write a program that imports all functions from the file `calculator_1.py` and handles basic operations.
+
+- Usage: `./100-my_calculator.py a operator b`
+  - If the number of arguments is not 3, your program has to:
+    - print `Usage: ./100-my_calculator.py <a> <operator> <b>` followed with a new line
+    - exit with the value `1`
+  - `operator` can be:
+    - `+` for addition
+    - `-` for subtraction
+    - `*` for multiplication
+    - `/` for division
+  - If the operator is not one of the above:
+    - print `Unknown operator. Available operators: +, -, * and /` followed with a new line
+    - exit with the value `1`
+  - You can cast `a` and `b` into integers by using `int()` (you can assume that all arguments will be castable into integers)
+  - The result should be printed like this: `<a> <operator> <b> = <result>`, followed by a new line
+- You are not allowed to use * for importing or `__import__`
+- Your code should not be executed when imported
+
+```
 guillaume@ubuntu:~/0x02$ cat calculator_1.py
 #!/usr/bin/python3
 def add(a, b):
@@ -466,31 +476,38 @@ guillaume@ubuntu:~/0x02$ ./100-my_calculator.py 3 H 5 ; echo $?
 Unknown operator. Available operators: +, -, * and /
 1
 guillaume@ubuntu:~/0x02$
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x02-python-import_modules
-File: 100-my_calculator.py
+**Repo:**
 
-7. Easy print #advanced
-Score: 100.00% (Checks completed: 100.00%)
-Write a program that prints #pythoniscool, followed by a new line, in the standard output.
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x02-python-import_modules`
+* File: `100-my_calculator.py`
 
-Your program should be maximum 2 lines long
-You are not allowed to use print or eval or open or import sys in your file 101-easy_print.py
+### [7. Easy print #advanced](./101-easy_print.py)
+
+Write a program that prints `#pythoniscool`, followed by a new line, in the standard output.
+
+- Your program should be maximum 2 lines long
+- You are not allowed to use `print` or `eval` or `open` or `import sys` in your file `101-easy_print.py`
+
+```
 guillaume@ubuntu:~/0x02$ ./101-easy_print.py
 #pythoniscool
 guillaume@ubuntu:~/0x02$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x02-python-import_modules
-File: 101-easy_print.py
+**Repo:**
 
-8. ByteCode -> Python #3 #advanced
-Score: 100.00% (Checks completed: 100.00%)
-Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x02-python-import_modules`
+* File: `101-easy_print.py`
 
+### [8. ByteCode -> Python #3 #advanced](./102-magic_calculation.py)
+
+Write the Python function `def magic_calculation(a, b):` that does exactly the same as the following Python bytecode:
+
+```
   3           0 LOAD_CONST               1 (0)
               3 LOAD_CONST               2 (('add', 'sub'))
               6 IMPORT_NAME              0 (magic_calculation_102)
@@ -538,34 +555,41 @@ Write the Python function def magic_calculation(a, b): that does exactly the sam
             106 RETURN_VALUE
             107 LOAD_CONST               0 (None)
             110 RETURN_VALUE
-Tip: Python bytecode
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x02-python-import_modules
-File: 102-magic_calculation.py
+- Tip: [Python bytecode](https://docs.python.org/3.4/library/dis.html)
 
-9. Fast alphabet #advanced
-Score: 100.00% (Checks completed: 100.00%)
+**Repo:**
+
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x02-python-import_modules`
+* File: `102-magic_calculation.py`
+
+### [9. Fast alphabet #advanced](./103-fast_alphabet.py)
+
 Write a program that prints the alphabet in uppercase, followed by a new line.
 
-Your program should be maximum 3 lines long
-You are not allowed to use:
-any loops
-any conditional statements
-str.join()
-any string literal
-any system calls
+- Your program should be maximum 3 lines long
+- You are not allowed to use:
+- any loops
+- any conditional statements
+- `str.join()`
+- any string literal
+- any system calls
+
+```
 guillaume@ubuntu:~/0x02$ ./103-fast_alphabet.py
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 guillaume@ubuntu:~/0x02$ wc -l 103-fast_alphabet.py
 3 103-fast_alphabet.py
 guillaume@ubuntu:~/0x02$
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x02-python-import_modules
-File: 103-fast_alphabet.py
+**Repo:**
+
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x02-python-import_modules`
+* File: `103-fast_alphabet.py`
 
 </details>
 
