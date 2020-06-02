@@ -82,175 +82,142 @@ What do these lines print?
 
 What do these lines print?
 
+```
 >>> a = { 'id': 89, 'name': "John" }
 >>> a.get('age')
+```
 
-‘age’
+- [ ] ‘age’
+- [ ] Not found
+- [ ] 89
+- [ ] 12
+- [x] Nothing
 
+### Question #3
 
-Not found
-
-
-89
-
-
-12
-
-
-Nothing
-
-Question #3
 What do these lines print?
 
+```
 >>> a = { 'id': 89, 'name': "John" }
 >>> a.get('age', 0)
+```
 
-‘age’
+- [ ] ‘age’
+- [ ] Nothing
+- [x] 0
+- [ ] 89
 
+### Question #4
 
-Nothing
-
-
-0
-
-
-89
-
-Question #4
 What do these lines print?
 
+```
 >>> a = { 'id': 89, 'name': "John", 'projects': [1, 2, 3, 4] }
 >>> a.get('projects')
+```
 
-‘projects’
+- [ ] ‘projects’
+- [x] [1, 2, 3, 4]
+- [ ] [1]
+- [ ] list
+- [ ] Nothing
 
+### Question #5
 
-[1, 2, 3, 4]
-
-
-[1]
-
-
-list
-
-
-Nothing
-
-Question #5
 What do these lines print?
 
+```
 >>> a = { 'id': 89, 'name': "John", 'projects': [1, 2, 3, 4] }
 >>> a.get('projects')[3]
+```
 
-4
+- [x] 4
+- [ ] [4]
+- [ ] [1, 2, 3, 4]
+- [ ] 3
+- [ ] [3]
 
+### Question #6
 
-[4]
-
-
-[1, 2, 3, 4]
-
-
-3
-
-
-[3]
-
-Question #6
 What do these lines print?
 
+```
 >>> a = { 'id': 89, 'name': "John", 'projects': [1, 2, 3, 4], 'friends': [ { 'id': 82, 'name': "Bob" }, { 'id': 83, 'name': "Amy" } ] }
 >>> a.get('friends')[-1].get("name")
+```
 
-89
+- [ ] 89
+- [ ] [ { ‘id’: 82, ‘name’: “Bob” }, { ‘id’: 83, ‘name’: “Amy” } ]
+- [x] ‘Amy’
+- [ ] ‘Bob’
+- [ ] Nothing
 
+### Question #7
 
-[ { ‘id’: 82, ‘name’: “Bob” }, { ‘id’: 83, ‘name’: “Amy” } ]
-
-
-‘Amy’
-
-
-‘Bob’
-
-
-Nothing
-
-Question #7
 What do these lines print?
 
+```
 >>> for i in range(0, 3):
 >>>     print(i, end=" ")
+```
 
-1 2 3
+- [ ] 1 2 3
+- [ ] 0 1 2 3
+- [x] 0 1 2
 
+### Question #8
 
-0 1 2 3
-
-
-0 1 2
-
-Question #8
 What do these lines print?
 
+```
 >>> for i in range(1, 4):
 >>>     print(i, end=" ")
+```
 
-1 2 3
+- [x] 1 2 3
+- [ ] 0 1 2 3
+- [ ] 1 2 3 4
 
+### Question #9
 
-0 1 2 3
-
-
-1 2 3 4
-
-Question #9
 What do these lines print?
 
+```
 >>> for i in [1, 2, 3, 4]:
 >>>     print(i, end=" ")
+```
 
-0 1 2 3
+- [ ] 0 1 2 3
+- [ ] 0 1 2 3 5
+- [ ] 1 2 3
+- [x] 1 2 3 4
 
+### Question #10
 
-0 1 2 3 5
-
-
-1 2 3
-
-
-1 2 3 4
-
-Question #10
 What do these lines print?
 
+```
 >>> for i in [1, 3, 4, 2]:
 >>>     print(i, end=" ")
+```
 
-0 1 2 3
+- [ ] 0 1 2 3
+- [ ] 1 2 3 4
+- [x] 1 3 4 2
+- [ ] 1 3 4 2 0
 
+### Question #11
 
-1 2 3 4
-
-
-1 3 4 2
-
-
-1 3 4 2 0
-
-Question #11
 What do these lines print?
 
+```
 >>> for i in ["Hello", "Holberton", "School", 98]:
 >>>     print(i, end=" ")
+```
 
-0 1 2 3
-
-
-1 2 3 4
-
-
-Hello Holberton School 98
+- [ ] 0 1 2 3
+- [ ] 1 2 3 4
+- [x] Hello Holberton School 98
 
 </details>
 
