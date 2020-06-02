@@ -448,24 +448,26 @@ guillaume@ubuntu:~/0x06$
 * Directory: `0x06-python-classes`
 * File: `3-square.py`
 
-4. Access and update private attribute mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a class Square that defines a square by: (based on 3-square.py)
+### [4. Access and update private attribute](./4-square.py)
 
-Private instance attribute: size:
-property def size(self): to retrieve it
-property setter def size(self, value): to set it:
-size must be an integer, otherwise raise a TypeError exception with the message size must be an integer
-if size is less than 0, raise a ValueError exception with the message size must be >= 0
-Instantiation with optional size: def __init__(self, size=0):
-Public instance method: def area(self): that returns the current square area
-You are not allowed to import any module
-Why?
+Write a class `Square` that defines a square by: (based on `3-square.py`)
 
-Why a getter and setter?
+- Private instance attribute: `size`:
+  - property `def size(self):` to retrieve it
+  - property setter `def size(self, value):` to set it:
+    - `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`
+    - if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`
+- Instantiation with optional `size`: `def __init__(self, size=0):`
+- Public instance method: `def area(self):` that returns the current square area
+- You are not allowed to import any module
 
-Reminder: size is a private attribute. We did that to make sure we control the type and value. Getter and setter methods are not 100% Python, but more OOP. With them, you will be able to validate the assignment of a private attribute and also define how getting the attribute value will be available from outside - by copy? by assignment? etc. Also, adding type/value validation in the setter will centralize the logic, since you will do it in only one place.
+**Why?**
 
+*Why a getter and setter?*
+
+Reminder: `size` is a private attribute. We did that to make sure we control the type and value. Getter and setter methods are not 100% Python, but more OOP. With them, you will be able to validate the assignment of a private attribute and also define how getting the attribute value will be available from outside - by copy? by assignment? etc. Also, adding type/value validation in the setter will centralize the logic, since you will do it in only one place.
+
+```
 guillaume@ubuntu:~/0x06$ cat 4-main.py
 #!/usr/bin/python3
 Square = __import__('4-square').Square
@@ -487,26 +489,30 @@ Area: 7921 for size: 89
 Area: 9 for size: 3
 size must be an integer
 guillaume@ubuntu:~/0x06$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x06-python-classes
-File: 4-square.py
+**Repo:**
 
-5. Printing a square mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a class Square that defines a square by: (based on 4-square.py)
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x06-python-classes`
+* File: `4-square.py`
 
-Private instance attribute: size:
-property def size(self): to retrieve it
-property setter def size(self, value): to set it:
-size must be an integer, otherwise raise a TypeError exception with the message size must be an integer
-if size is less than 0, raise a ValueError exception with the message size must be >= 0
-Instantiation with optional size: def __init__(self, size=0):
-Public instance method: def area(self): that returns the current square area
-Public instance method: def my_print(self): that prints in stdout the square with the character #:
-if size is equal to 0, print an empty line
-You are not allowed to import any module
+### [5. Printing a square](./5-square.py)
+
+Write a class `Square` that defines a square by: (based on `4-square.py`)
+
+- Private instance attribute: `size`:
+  - property `def size(self):` to retrieve it
+  - property setter `def size(self, value):` to set it:
+    - `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`
+    - if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`
+- Instantiation with optional `size`: `def __init__(self, size=0):`
+- Public instance method: `def area(self):` that returns the current square area
+- Public instance method: `def my_print(self):` that prints in stdout the square with the character #:
+  - if `size` is equal to 0, print an empty line
+- You are not allowed to import any module
+
+```
 guillaume@ubuntu:~/0x06$ cat 5-main.py
 #!/usr/bin/python3
 Square = __import__('5-square').Square
@@ -545,31 +551,35 @@ guillaume@ubuntu:~/0x06$ ./5-main.py
 
 --
 guillaume@ubuntu:~/0x06$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x06-python-classes
-File: 5-square.py
+**Repo:**
 
-6. Coordinates of a square mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a class Square that defines a square by: (based on 5-square.py)
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x06-python-classes`
+* File: `5-square.py`
 
-Private instance attribute: size:
-property def size(self): to retrieve it
-property setter def size(self, value): to set it:
-size must be an integer, otherwise raise a TypeError exception with the message size must be an integer
-if size is less than 0, raise a ValueError exception with the message size must be >= 0
-Private instance attribute: position:
-property def position(self): to retrieve it
-property setter def position(self, value): to set it:
-position must be a tuple of 2 positive integers, otherwise raise a TypeError exception with the message position must be a tuple of 2 positive integers
-Instantiation with optional size and optional position: def __init__(self, size=0, position=(0, 0)):
-Public instance method: def area(self): that returns the current square area
-Public instance method: def my_print(self): that prints in stdout the square with the character #:
-if size is equal to 0, print an empty line
-position should be use by using space - Don’t fill lines by spaces when position[1] > 0
-You are not allowed to import any module
+### [6. Coordinates of a square](./6-square.py)
+
+Write a class `Square` that defines a square by: (based on `5-square.py`)
+
+- Private instance attribute: `size`:
+  - property `def size(self):` to retrieve it
+  - property setter `def size(self, value):` to set it:
+    - `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`
+    - if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`
+- Private instance attribute: `position`:
+  - property `def position(self):` to retrieve it
+  - property setter `def position(self, value):` to set it:
+    - `position` must be a tuple of 2 positive integers, otherwise raise a `TypeError` exception with the message `position must be a tuple of 2 positive integers`
+- Instantiation with optional `size` and optional `position`: `def __init__(self, size=0, position=(0, 0)):`
+- Public instance method: `def area(self):` that returns the current square area
+- Public instance method: `def my_print(self):` that prints in stdout the square with the character `#`:
+  - if `size` is equal to 0, print an empty line
+  - `position` should be use by using space - **Don’t fill lines by spaces** when `position[1] > 0`
+- You are not allowed to import any module
+
+```
 guillaume@ubuntu:~/0x06$ cat 6-main.py
 #!/usr/bin/python3
 Square = __import__('6-square').Square
@@ -604,34 +614,39 @@ ___###$
 ___###$
 --$
 guillaume@ubuntu:~/0x06$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x06-python-classes
-File: 6-square.py
+**Repo:**
 
-7. Singly linked list #advanced
-Score: 0.00% (Checks completed: 0.00%)
-Write a class Node that defines a node of a singly linked list by:
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x06-python-classes`
+* File: `6-square.py`
 
-Private instance attribute: data:
-property def data(self): to retrieve it
-property setter def data(self, value): to set it:
-data must be an integer, otherwise raise a TypeError exception with the message data must be an integer
-Private instance attribute: next_node:
-property def next_node(self): to retrieve it
-property setter def next_node(self, value): to set it:
-next_node can be None or must be a Node, otherwise raise a TypeError exception with the message next_node must be a Node object
-Instantiation with data and next_node: def __init__(self, data, next_node=None):
-And, write a class SinglyLinkedList that defines a singly linked list by:
+### 7. Singly linked list #advanced
 
-Private instance attribute: head (no setter or getter)
-Simple instantiation: def __init__(self):
-Should be printable:
-print the entire list in stdout
-one node number by line
-Public instance method: def sorted_insert(self, value): that inserts a new Node into the correct sorted position in the list (increasing order)
-You are not allowed to import any module
+Write a class `Node` that defines a node of a singly linked list by:
+
+- Private instance attribute: `data`:
+  - property `def data(self):` to retrieve it
+  - property setter `def data(self, value):` to set it:
+    - `data` must be an integer, otherwise raise a `TypeError` exception with the message `data must be an integer`
+- Private instance attribute: `next_node`:
+  - property `def next_node(self):` to retrieve it
+  - property setter `def next_node(self, value):` to set it:
+    - `next_node` can be `None` or must be a `Node`, otherwise raise a `TypeError` exception with the message `next_node must be a Node object`
+- Instantiation with `data` and `next_node: def __init__(self, data, next_node=None):`
+
+And, write a class `SinglyLinkedList` that defines a singly linked list by:
+
+- Private instance attribute: `head` (no setter or getter)
+- Simple instantiation: `def __init__(self):`
+- Should be printable:
+  - print the entire list in stdout
+  - one node number by line
+- Public instance method: `def sorted_insert(self, value):` that inserts a new `Node` into the correct sorted position in the list (increasing order)
+- You are not allowed to import any module
+
+```
 guillaume@ubuntu:~/0x06$ cat 100-main.py
 #!/usr/bin/python3
 SinglyLinkedList = __import__('100-singly_linked_list').SinglyLinkedList
@@ -663,32 +678,36 @@ guillaume@ubuntu:~/0x06$ ./100-main.py
 10
 12
 guillaume@ubuntu:~/0x06$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x06-python-classes
-File: 100-singly_linked_list.py
+**Repo:**
 
-8. Print Square instance #advanced
-Score: 0.00% (Checks completed: 0.00%)
-Write a class Square that defines a square by: (based on 6-square.py)
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x06-python-classes`
+* File: `100-singly_linked_list.py`
 
-Private instance attribute: size:
-property def size(self): to retrieve it
-property setter def size(self, value): to set it:
-size must be an integer, otherwise raise a TypeError exception with the message size must be an integer
-if size is less than 0, raise a ValueError exception with the message size must be >= 0
-Private instance attribute: position:
-property def position(self): to retrieve it
-property setter def position(self, value): to set it:
-position must be a tuple of 2 positive integers, otherwise raise a TypeError exception with the message position must be a tuple of 2 positive integer
-Instantiation with optional size and optional position: def __init__(self, size=0, position=(0, 0)):
-Public instance method: def area(self): that returns the current square area
-Public instance method: def my_print(self): that prints in stdout the square with the character #:
-if size is equal to 0, print an empty line
-position should be use by using space
-Printing a Square instance should have the same behavior as my_print()
-You are not allowed to import any module
+### 8. Print Square instance #advanced
+
+Write a class `Square` that defines a square by: (based on `6-square.py`)
+
+- Private instance attribute: `size`:
+  - property `def size(self):` to retrieve it
+  - property setter `def size(self, value):` to set it:
+    - `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`
+    - if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`
+- Private instance attribute: `position`:
+  - property `def position(self):` to retrieve it
+  - property setter `def position(self, value):` to set it:
+    - `position` must be a tuple of 2 positive integers, otherwise raise a `TypeError` exception with the message `position must be a tuple of 2 positive integer`
+- Instantiation with optional `size` and optional `position: def __init__(self, size=0, position=(0, 0)):`
+- Public instance method: `def area(self):` that returns the current square area
+- Public instance method: `def my_print(self):` that prints in stdout the square with the character `#`:
+  - if `size` is equal to 0, print an empty line
+  - `position` should be use by using space
+- Printing a `Square` instance should have the same behavior as `my_print()`
+- You are not allowed to import any module
+
+```
 guillaume@ubuntu:~/0x06$ cat 101-main.py
 #!/usr/bin/python3
 Square = __import__('101-square').Square
@@ -715,25 +734,29 @@ ____#####$
 ____#####$
 ____#####$
 guillaume@ubuntu:~/0x06$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x06-python-classes
-File: 101-square.py
+**Repo:**
 
-9. Compare 2 squares #advanced
-Score: 100.00% (Checks completed: 100.00%)
-Write a class Square that defines a square by: (based on 4-square.py)
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x06-python-classes`
+* File: `101-square.py`
 
-Private instance attribute: size:
-property def size(self): to retrieve it
-property setter def size(self, value): to set it:
-size must be a number (float or integer), otherwise raise a TypeError exception with the message size must be a number
-if size is less than 0, raise a ValueError exception with the message size must be >= 0
-Instantiation with size: def __init__(self, size=0):
-Public instance method: def area(self): that returns the current square area
-Square instance can answer to comparators: ==, !=, >, >=, < and <= based on the square area
-You are not allowed to import any module
+### [9. Compare 2 squares #advanced](./102-square.py)
+
+Write a class `Square` that defines a square by: (based on `4-square.py`)
+
+- Private instance attribute: `size`:
+  - property `def size(self):` to retrieve it
+  - property setter `def size(self, value):` to set it:
+    - `size` must be a number (float or integer), otherwise raise a `TypeError` exception with the message `size must be a number`
+    - if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`
+- Instantiation with `size`: `def __init__(self, size=0):`
+- Public instance method: `def area(self):` that returns the current square area
+- `Square` instance can answer to comparators: `==`, `!=`, `>`, `>=`, `<` and `<=` based on the square area
+- You are not allowed to import any module
+
+```
 guillaume@ubuntu:~/0x06$ cat 102-main.py
 #!/usr/bin/python3
 Square = __import__('102-square').Square
@@ -759,16 +782,19 @@ Square 5 < Square 6
 Square 5 <= Square 6
 Square 5 != Square 6
 guillaume@ubuntu:~/0x06$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x06-python-classes
-File: 102-square.py
+**Repo:**
 
-10. ByteCode -> Python #5 #advanced
-Score: 94.44% (Checks completed: 94.44%)
-Write the Python class MagicClass that does exactly the same as the following Python bytecode:
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x06-python-classes`
+* File: `102-square.py`
 
+### [10. ByteCode -> Python #5 #advanced](./103-magic_class.py)
+
+Write the Python class `MagicClass` that does exactly the same as the following Python bytecode:
+
+```
 Disassembly of __init__:
  10           0 LOAD_CONST               1 (0)
               3 LOAD_FAST                0 (self)
@@ -818,12 +844,14 @@ Disassembly of circumference:
              13 LOAD_ATTR                2 (_MagicClass__radius)
              16 BINARY_MULTIPLY
              17 RETURN_VALUE
-Tip: Python bytecode
-Repo:
+```
+- Tip: [Python bytecode](https://docs.python.org/3.4/library/dis.html)
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x06-python-classes
-File: 103-magic_class.py
+**Repo:**
+
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x06-python-classes`
+* File: `103-magic_class.py`
 
 </details>
 
