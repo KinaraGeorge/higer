@@ -901,7 +901,7 @@ guillaume@ubuntu:~/0x08$
 * Directory: `0x08-python-more_classes`
 * File: `9-rectangle.py`
 
-10. N queens #advanced
+### 10. N queens #advanced
 
 Chess grandmaster [Judit Polgár](https://en.wikipedia.org/wiki/Judit_Polg%C3%A1r), the strongest female chess player of all time
 
