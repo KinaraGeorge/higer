@@ -718,7 +718,7 @@ guillaume@ubuntu:~/$
 * Directory: `0x0D-SQL_introduction`
 * File: `16-no_link.sql`
 
-[17. Go to UTF8 #advanced](./100-move_to_utf8.sql)
+### [17. Go to UTF8 #advanced](./100-move_to_utf8.sql)
 
 Write a script that converts `hbtn_0c_0` database to UTF8 (`utf8mb4`, collate `utf8mb4_unicode_ci`) in your MySQL server.
 
