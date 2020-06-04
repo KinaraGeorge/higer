@@ -79,10 +79,11 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 <details>
 <summary>View Contents</summary>
 
-0. If it's not tested it doesn't work mandatory
-Score: 93.98% (Checks completed: 93.98%)
+### [0. If it's not tested it doesn't work](./tests)
+
 All your files, classes and methods must be unit tested and be PEP 8 validated.
 
+```
 guillaume@ubuntu:~/$ python3 -m unittest discover tests
 ...................................................................................
 ...................................................................................
@@ -92,16 +93,17 @@ Ran 189 tests in 13.135s
 
 OK
 guillaume@ubuntu:~/$
-Note that this is just an example. The number of tests you create can be different from the above example.
+```
+*Note that this is just an example. The number of tests you create can be different from the above example.*
 
-Repo:
+**Repo:**
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: tests/
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x0C-python-almost_a_circle`
+* File: `tests/`
 
-1. Base class mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [1. Base class](./models/base.py)
+
 Write the first class Base:
 
 Create a folder named models with an empty file __init__.py inside - with this file, the folder will become a Python module
@@ -150,8 +152,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/base.py, models/__init__.py
 
-2. First Rectangle mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [2. First Rectangle](./models/rectangle.py)
+
 Write the class Rectangle that inherits from Base:
 
 In the file models/rectangle.py
@@ -195,8 +197,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/rectangle.py
 
-3. Validate attributes mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [3. Validate attributes](./models/rectangle.py)
+
 Update the class Rectangle by adding validation of all setter methods and instantiation (id excluded):
 
 If the input is not an integer, raise the TypeError exception with the message: <name of the attribute> must be an integer. Example: width must be an integer
@@ -243,8 +245,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/rectangle.py
 
-4. Area first mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [4. Area first](./models/rectangle.py)
+
 Update the class Rectangle by adding the public method def area(self): that returns the area value of the Rectangle instance.
 
 guillaume@ubuntu:~/$ cat 3-main.py
@@ -274,8 +276,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/rectangle.py
 
-5. Display #0 mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [5. Display #0](./models/rectangle.py)
+
 Update the class Rectangle by adding the public method def display(self): that prints in stdout the Rectangle instance with the character # - you don’t need to handle x and y here.
 
 guillaume@ubuntu:~/$ cat 4-main.py
@@ -310,8 +312,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/rectangle.py
 
-6. __str__ mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [6. __str__](./models/rectangle.py)
+
 Update the class Rectangle by overriding the __str__ method so that it returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
 
 guillaume@ubuntu:~/$ cat 5-main.py
@@ -337,8 +339,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/rectangle.py
 
-7. Display #1 mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [7. Display #1](./models/rectangle.py)
+
 Update the class Rectangle by improving the public method def display(self): to print in stdout the Rectangle instance with the character # by taking care of x and y
 
 guillaume@ubuntu:~/$ cat 6-main.py
@@ -372,8 +374,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/rectangle.py
 
-8. Update #0 mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [8. Update #0](./models/rectangle.py)
+
 Update the class Rectangle by adding the public method def update(self, *args): that assigns an argument to each attribute:
 
 1st argument should be the id attribute
@@ -422,7 +424,7 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/rectangle.py
 
-9. Update #1 mandatory
+### [9. Update #1](./models/rectangle.py)
 Score: 100.00% (Checks completed: 100.00%)
 Update the class Rectangle by updating the public method def update(self, *args): by changing the prototype to update(self, *args, **kwargs) that assigns a key/value argument to attributes:
 
@@ -467,8 +469,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/rectangle.py
 
-10. And now, the Square! mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [10. And now, the Square!](./models/square.py)
+
 Write the class Square that inherits from Rectangle:
 
 In the file models/square.py
@@ -535,8 +537,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/square.py
 
-11. Square size mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [11. Square size](./models/square.py)
+
 Update the class Square by adding the public getter and setter size
 
 The setter should assign (in this order) the width and the height - with the same value
@@ -571,8 +573,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/square.py
 
-12. Square update mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [12. Square update](./models/square.py)
+
 Update the class Square by adding the public method def update(self, *args, **kwargs) that assigns attributes:
 
 *args is the list of arguments - no-keyworded arguments
@@ -630,8 +632,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/square.py
 
-13. Rectangle instance to dictionary representation mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [13. Rectangle instance to dictionary representation](./models/rectangle.py)
+
 Update the class Rectangle by adding the public method def to_dictionary(self): that returns the dictionary representation of a Rectangle:
 
 This dictionary must contain:
@@ -674,8 +676,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/rectangle.py
 
-14. Square instance to dictionary representation mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [14. Square instance to dictionary representation](./models/square.py)
+
 Update the class Square by adding the public method def to_dictionary(self): that returns the dictionary representation of a Square:
 
 This dictionary must contain:
@@ -717,8 +719,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/square.py
 
-15. Dictionary to JSON string mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [15. Dictionary to JSON string](./models/base.py)
+
 JSON is one of the standard formats for sharing data representation.
 
 Update the class Base by adding the static method def to_json_string(list_dictionaries): that returns the JSON string representation of list_dictionaries:
@@ -754,8 +756,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/base.py
 
-16. JSON string to file mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [16. JSON string to file](./models/base.py)
+
 Update the class Base by adding the class method def save_to_file(cls, list_objs): that writes the JSON string representation of list_objs to a file:
 
 list_objs is a list of instances who inherits of Base - example: list of Rectangle or list of Square instances
@@ -786,7 +788,7 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/base.py
 
-17. JSON string to dictionary mandatory
+### [17. JSON string to dictionary](./models/base.py)
 Score: 100.00% (Checks completed: 100.00%)
 Update the class Base by adding the static method def from_json_string(json_string): that returns the list of the JSON string representation json_string:
 
@@ -821,8 +823,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/base.py
 
-18. Dictionary to Instance mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [18. Dictionary to Instance](./models/base.py)
+
 Update the class Base by adding the class method def create(cls, **dictionary): that returns an instance with all attributes already set:
 
 **dictionary can be thought of as a double pointer to a dictionary
@@ -859,8 +861,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/base.py
 
-19. File to instances mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [19. File to instances](./models/base.py)
+
 Update the class Base by adding the class method def load_from_file(cls): that returns a list of instances:
 
 The filename must be: <Class name>.json - example: Rectangle.json
@@ -930,8 +932,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/base.py
 
-20. JSON ok, but CSV? #advanced
-Score: 52.94% (Checks completed: 52.94%)
+### [20. JSON ok, but CSV? #advanced](./models/)
+
 Update the class Base by adding the class methods def save_to_file_csv(cls, list_objs): and def load_from_file_csv(cls): that serializes and deserializes in CSV:
 
 The filename must be: <Class name>.csv - example: Rectangle.csv
@@ -1002,8 +1004,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x0C-python-almost_a_circle
 File: models/
 
-21. Let's draw it #advanced
-Score: 0.00% (Checks completed: 0.00%)
+### 21. Let's draw it #advanced
+
 Update the class Base by adding the static method def draw(list_rectangles, list_squares): that opens a window and draws all the Rectangles and Squares:
 
 You must use the Turtle graphics module
@@ -1034,13 +1036,14 @@ Halted my vm with vagrant halt and started it back up with vagrant up --provisio
 If you get an error that looks like /usr/bin/xauth: timeout in locking authority file /home/vagrant/.Xauthority, then enter rm .Xauthority (you may have to sudo).
 Logout and restart the vm with vagrant up --provision.
 Test with xeyes. If Xquartz is installed on the Mac OS it should open in an Xquartz window.
-It is your responsibility to request a review for this task from a peer before the project’s deadline. If no peers have been reviewed, you should request a review from a TA or staff member.
 
-Repo:
+**It is your responsibility to request a review for this task from a peer before the project’s deadline. If no peers have been reviewed, you should request a review from a TA or staff member.**
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/base.py
+**Repo:**
+
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: 0x0C-python-almost_a_circle
+* File: models/base.py
 
 </details>
 
