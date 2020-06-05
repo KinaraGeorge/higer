@@ -55,532 +55,385 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 <details>
 <summary>Show</summary>
   
-Question #0
+### Question #0
+
 In the following URL, what’s the hostname?
 
+```
 http://www.holbertonschool.com
+```
 
-holbertonschool
+- [ ] holbertonschool
+- [ ] holbertonschool.com
+- [x] www.holbertonschool.com
+- [ ] www.holbertonschool
 
+### Question #1
 
-holbertonschool.com
-
-
-www.holbertonschool.com
-
-
-www.holbertonschool
-
-Question #1
 In the following URL, what’s the protocol?
 
+```
 http://www.holbertonschool.com
+```
 
-http
+- [x] http
+- [ ] https
+- [ ] ftp
 
+### Question #2
 
-https
-
-
-ftp
-
-Question #2
 What will be the port number requested by this URL?
 
+```
 https://www.holbertonschool.com:8080/apply
+```
 
-80
+- [ ] 80
+- [x] 8080
+- [ ] 8888
 
+### Question #3
 
-8080
-
-
-8888
-
-Question #3
 What will be the port number requested by this URL?
 
+```
 http://www.holbertonschool.com/apply
+```
 
-8080
+- [ ] 8080
+- [x] 80
+- [ ] 443
+- [ ] 22
 
+### Question #4
 
-80
-
-
-443
-
-
-22
-
-Question #4
 What will be the port number requested by this URL?
 
+```
 afp://www.holbertonschool.com/access_in_port_543
+```
 
-543
+- [ ] 543
+- [ ] 80
+- [x] 548
 
+### Question #5
 
-80
-
-
-548
-
-Question #5
 In the following URL, what’s the sub domain?
 
+```
 https://api.holbertonschool.com/v1/auth
+```
 
-.com
+- [ ] .com
+- [ ] api.holbertonschool
+- [x] api
 
+### Question #6
 
-api.holbertonschool
-
-
-api
-
-Question #6
 In the following URL, what’s the sub domain?
 
+```
 https://api-dev.holbertonschool.com/v1/auth/new
+```
 
-api-dev
+- [x] api-dev
+- [ ] /v1/auth/new
+- [ ] /v1
 
+### Question #7
 
-/v1/auth/new
-
-
-/v1
-
-Question #7
 In the following URL, what’s the resource path?
 
+```
 https://www.holbertonschool.com/index.html
+```
 
-/
+- [ ] /
+- [x] index.html
+- [ ] www.holbertonschool.com/index.html
 
+### Question #8
 
-index.html
-
-
-www.holbertonschool.com/index.html
-
-Question #8
 In the following URL, what’s the resource path?
 
+```
 https://www.holbertonschool.com/assets/scripts/main.js
+```
 
-assets/scripts/main.js
+- [x] assets/scripts/main.js
+- [ ] main.js
+- [ ] assets/scripts
 
+### Question #9
 
-main.js
-
-
-assets/scripts
-
-Question #9
 In the following URL, what’s the resource path?
 
+```
 https://api.holbertonschool.com/v1/auth/new
+```
 
-v1
+- [ ] v1
+- [ ] v1/auth
+- [x] v1/auth/new
+- [ ] v1/auth/new/index.html
 
+### Question #10
 
-v1/auth
-
-
-v1/auth/new
-
-
-v1/auth/new/index.html
-
-Question #10
 In the following URL, what’s the name of the parameter in the query string?
 
+```
 https://www.holbertonschool.com/apply?batch=89
+```
 
-batch
+- [x] batch
+- [ ] apply
+- [ ] 89
 
+### Question #11
 
-apply
-
-
-89
-
-Question #11
 In the following URL, how many parameters are in the query string?
 
+```
 https://www.holbertonschool.com/apply?batch=89&location=SF
+```
 
-2
+- [x] 2
+- [ ] 3
+- [ ] 1
 
+### Question #12
 
-3
-
-
-1
-
-Question #12
 In the following URL, how many parameters are in the query string?
 
+```
 https://www.holbertonschool.com/apply?batch=89&location=SF&name=John%20do%20is%20the%20best%20%3D%20c%20is%20fun
+```
 
-3
+- [x] 3
+- [ ] 2
+- [ ] 1
+- [ ] 4
+- [ ] 5
 
+### Question #13
 
-2
-
-
-1
-
-
-4
-
-
-5
-
-Question #13
 When you are typing https://intranet.hbtn.io in your browser, which HTTP verb is used?
 
+- [ ] POST
+- [ ] DELETE
+- [x] GET
+- [ ] PUT
 
-POST
+### Question #14
 
-
-DELETE
-
-
-GET
-
-
-PUT
-
-Question #14
 In this following HTML code, which HTTP verb will be used when you will submit this form?
 
+```
 <FORM action="/login.php" method="post">
     <INPUT type="email" name="email" placeholder="Email" required/>
     <INPUT type="password" name="password" placeholder="Password" required/>
     <INPUT type="submit" name="submit" value="Login" />
 <FORM>
+```
 
-POST
+- [x] POST
+- [ ] FORM
+- [ ] SUBMIT
+- [ ] ENTER
+- [ ] GET
 
+### Question #15
 
-FORM
-
-
-SUBMIT
-
-
-ENTER
-
-
-GET
-
-Question #15
 In this following HTML code, which HTTP verb will be used when you will submit this form?
 
+```
 <FORM action="/12/update.php" method="put">
     <INPUT type="text" name="first_name" value="Bob"/>
     <INPUT type="text" name="last_name" value="Dylan"/>
     <INPUT type="submit" name="update" value="Update" />
 <FORM>
+```
 
-GET
+- [ ] GET
+- [ ] UPDATE
+- [ ] POST
+- [x] PUT
 
+### Question #16
 
-UPDATE
-
-
-POST
-
-
-PUT
-
-Question #16
 What’s the status code number for a web page that can’t be found?
 
+- [x] 404
+- [ ] 405
+- [ ] 500
 
-404
+### Question #17
 
-
-405
-
-
-500
-
-Question #17
 What’s the status code number for a permanent redirection (moved permanently)?
 
+- [ ] 201
+- [ ] 300
+- [x] 301
+- [ ] 302
+- [ ] 304
 
-201
+### Question #18
 
-
-300
-
-
-301
-
-
-302
-
-
-304
-
-Question #18
 What’s the status code number for an invalid HTTP request (server can’t understand it)?
 
+- [ ] 500
+- [ ] 404
+- [x] 400
 
-500
+### Question #19
 
-
-404
-
-
-400
-
-Question #19
 What is the first digit of status codes that indicate a server error?
 
+- [ ] 1xx
+- [ ] 2xx
+- [ ] 3xx
+- [ ] 4xx
+- [x] 5xx
 
-1xx
+### Question #20
 
-
-2xx
-
-
-3xx
-
-
-4xx
-
-
-5xx
-
-Question #20
 Which HTTP request header indicates the browser used by the client sending the request?
 
+- [ ] Origin
+- [x] User-Agent
+- [ ] I-Am
+- [ ] Browser-Name
 
-Origin
+### Question #21
 
-
-User-Agent
-
-
-I-Am
-
-
-Browser-Name
-
-Question #21
 What is the name of the HTTP request header that defines the size (in bytes) of the message body?
 
+- [x] Content-Length
+- [ ] Length
+- [ ] Content-Size
+- [ ] Size
 
-Content-Length
+### Question #22
 
-
-Length
-
-
-Content-Size
-
-
-Size
-
-Question #22
 What is the name of the HTTP request header used to send cookies from the client?
 
+- [ ] Set-Cookie
+- [ ] Send-Cookie
+- [x] Cookie
+- [ ] Cookies
 
-Set-Cookie
+### Question #23
 
-
-Send-Cookie
-
-
-Cookie
-
-
-Cookies
-
-Question #23
 What is the name of the HTTP response header used to send cookies to the client from the server?
 
+- [ ] Send-Cookies
+- [x] Set-Cookie
+- [ ] Cookie-Setter
 
-Send-Cookies
+### Question #24
 
-
-Set-Cookie
-
-
-Cookie-Setter
-
-Question #24
 What is the name of the HTTP response header used to define the size, in bytes, of the body of the response?
 
+- [ ] Body-Size
+- [ ] Content-Size
+- [ ] Length
+- [x] Content-Length
 
-Body-Size
+### Question #25
 
-
-Content-Size
-
-
-Length
-
-
-Content-Length
-
-Question #25
 What is the name of the HTTP response header used to define the status code of the response?
 
+- [x] Status
+- [ ] Status-Code
+- [ ] Code
+- [ ] Http-Status
 
-Status
+### Question #26
 
-
-Status-Code
-
-
-Code
-
-
-Http-Status
-
-Question #26
 What is the name of the HTTP response header used to define the formatting of the body? (This header gives details to the client on how to interpret the data received.)
 
+- [ ] Type
+- [ ] Content-Format
+- [ ] Format
+- [x] Content-Type
 
-Type
+### Question #27
 
-
-Content-Format
-
-
-Format
-
-
-Content-Type
-
-Question #27
 When an HTTP response indicates a redirection, which header defines the URL the client should be redirected to?
 
+- [ ] Redirect-URI
+- [x] Location
+- [ ] Next-Location
+- [ ] Redirect-Location
+- [ ] Redirect
 
-Redirect-URI
+### Question #28
 
-
-Location
-
-
-Next-Location
-
-
-Redirect-Location
-
-
-Redirect
-
-Question #28
 What is the name of the HTTP response header that defines a list of available HTTP methods for this URL?
 
+- [ ] Verbs
+- [x] Allow
+- [ ] Verbs-Allowed
 
-Verbs
+### Question #29
 
+What is the `curl` option that defines the HTTP method used?
 
-Allow
+- [ ] -d
+- [x] -X
+- [ ] -s
 
+### Question #30
 
-Verbs-Allowed
+What is the `curl` option to follow all redirects?
 
-Question #29
-What is the curl option that defines the HTTP method used?
+- [ ] -s
+- [ ] -X
+- [x] -L
 
+### Question #31
 
--d
+Which `curl` option is used to set an HTTP header to a specific value?
 
+- [x] -H
+- [ ] -X
+- [ ] -s
 
--X
+### Question #32
 
+What is the `curl` option to set a body key-value parameter?
 
--s
+- [ ] -b
+- [ ] -X
+- [x] -d
 
-Question #30
-What is the curl option to follow all redirects?
+### Question #33
 
+What is the `curl` option to set a cookie with a key-value pair?
 
--s
+- [ ] -d
+- [x] -b
+- [ ] -a
+- [ ] -c
 
+### Question #34
 
--X
+What is the `curl` option to disable the progression display?
 
+- [x] -s
+- [ ] -c
+- [ ] -b
+- [ ] -p
 
--L
+### Question #35
 
-Question #31
-Which curl option is used to set an HTTP header to a specific value?
+What is the `curl` option to save the body of the resulting response to a file?
 
-
--H
-
-
--X
-
-
--s
-
-Question #32
-What is the curl option to set a body key-value parameter?
-
-
--b
-
-
--X
-
-
--d
-
-Question #33
-What is the curl option to set a cookie with a key-value pair?
-
-
--d
-
-
--b
-
-
--a
-
-
--c
-
-Question #34
-What is the curl option to disable the progression display?
-
-
--s
-
-
--c
-
-
--b
-
-
--p
-
-Question #35
-What is the curl option to save the body of the resulting response to a file?
-
-
--d
-
-
--b
-
-
--r
-
-
--o
+- [ ] -d
+- [ ] -b
+- [ ] -r
+- [x] -o
 
 </details>
 
@@ -589,96 +442,118 @@ What is the curl option to save the body of the resulting response to a file?
 <details>
 <summary>View Contents</summary>
 
-0. cURL body size mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [0. cURL body size](./0-body_size.sh)
+
 Write a Bash script that takes in a URL, sends a request to that URL, and displays the size of the body of the response
 
-The size must be displayed in bytes
-You have to use curl
+- The size must be displayed in bytes
+- You have to use `curl`
+
 Please test your script in the container provided, using the web server running on port 5000
 
+```
 guillaume@ubuntu:~/0x10$ ./0-body_size.sh 0.0.0.0:5000
 10
 guillaume@ubuntu:~/0x10$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x10-python-network_0
-File: 0-body_size.sh
+**Repo:**
 
-1. cURL to the end mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Bash script that takes in a URL, sends a GET request to the URL, and displays the body of the response
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x10-python-network_0`
+* File: `0-body_size.sh`
 
-Display only body of a 200 status code response
-You have to use curl
+### [1. cURL to the end](./1-body.sh)
+
+Write a Bash script that takes in a URL, sends a `GET` request to the URL, and displays the body of the response
+
+- Display only body of a `200` status code response
+- You have to use `curl`
+
 Please test your script in the container provided, using the web server running on port 5000
 
+```
 guillaume@ubuntu:~/0x10$ ./1-body.sh 0.0.0.0:5000/route_1 ; echo ""
 Route 2
 guillaume@ubuntu:~/0x10$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x10-python-network_0
-File: 1-body.sh
+**Repo:**
 
-2. cURL Method mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Bash script that sends a DELETE request to the URL passed as the first argument and displays the body of the response
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x10-python-network_0`
+* File: `1-body.sh`
 
-You have to use curl
+### [2. cURL Method](./2-delete.sh)
+
+Write a Bash script that sends a `DELETE` request to the URL passed as the first argument and displays the body of the response
+
+- You have to use `curl`
+
 Please test your script in the container provided, using the web server running on port 5000
 
+```
 guillaume@ubuntu:~/0x10$ ./2-delete.sh 0.0.0.0:5000/route_3 ; echo ""
 I'm a DELETE request
 guillaume@ubuntu:~/0x10$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x10-python-network_0
-File: 2-delete.sh
+**Repo:**
 
-3. cURL only methods mandatory
-Score: 100.00% (Checks completed: 100.00%)
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x10-python-network_0`
+* File: `2-delete.sh`
+
+### [3. cURL only methods](./3-methods.sh)
+
 Write a Bash script that takes in a URL and displays all HTTP methods the server will accept.
 
-You have to use curl
+- You have to use `curl`
+
 Please test your script in the container provided, using the web server running on port 5000
 
+```
 guillaume@ubuntu:~/0x10$ ./3-methods.sh 0.0.0.0:5000/route_4
 OPTIONS, HEAD, PUT
 guillaume@ubuntu:~/0x10$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x10-python-network_0
-File: 3-methods.sh
+**Repo:**
 
-4. cURL headers mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Bash script that takes in a URL as an argument, sends a GET request to the URL, and displays the body of the response
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x10-python-network_0`
+* File: `3-methods.sh`
 
-A header variable X-HolbertonSchool-User-Id must be sent with the value 98
-You have to use curl
+### [4. cURL headers](./4-header.sh)
+
+Write a Bash script that takes in a URL as an argument, sends a `GET` request to the URL, and displays the body of the response
+
+- A header variable `X-HolbertonSchool-User-Id` must be sent with the value `98`
+- You have to use `curl`
+
 Please test your script in the container provided, using the web server running on port 5000
 
+```
 guillaume@ubuntu:~/0x10$ ./4-header.sh 0.0.0.0:5000/route_5 ; echo ""
 Hello Holberton School!
 guillaume@ubuntu:~/0x10$ 
-Repo:
+``` 
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x10-python-network_0
-File: 4-header.sh
+**Repo:**
 
-5. cURL POST parameters mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Bash script that takes in a URL, sends a POST request to the passed URL, and displays the body of the response
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x10-python-network_0`
+* File: `4-header.sh`
 
-A variable email must be sent with the value hr@holbertonschool.com
-A variable subject must be sent with the value I will always be here for PLD
-You have to use curl
+### [5. cURL POST parameters](./5-post_params.sh)
+
+Write a Bash script that takes in a URL, sends a `POST` request to the passed URL, and displays the body of the response
+
+- A variable `email` must be sent with the value `hr@holbertonschool.com`
+- A variable `subject` must be sent with the value `I will always be here for PLD`
+- You have to use `curl`
+
+```
 Please test your script in the container provided, using the web server running on port 5000
 
 guillaume@ubuntu:~/0x10$ ./5-post_params.sh 0.0.0.0:5000/route_6 ; echo ""
@@ -686,26 +561,31 @@ POST params:
     email: hr@holbertonschool.com
     subject: I will always be here for PLD
 guillaume@ubuntu:~/0x10$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x10-python-network_0
-File: 5-post_params.sh
+**Repo:**
 
-6. Find a peak mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Technical interview preparation:
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x10-python-network_0`
+* File: `5-post_params.sh`
 
-You are not allowed to google anything
-Whiteboard first
+### [6. Find a peak](./6-peak.py)
+
+**Technical interview preparation:**
+
+- You are not allowed to google anything
+- Whiteboard first
+
 Write a function that finds a peak in a list of unsorted integers.
 
-Prototype: def find_peak(list_of_integers):
-You are not allowed to import any module
-Your algorithm must have the lowest complexity
-6-peak.py must contain the function
-6-peak.txt must contain the complexity of your algorithm: O(log(n)), O(n), O(nlog(n)) or O(n2)
-Note: there may be more than one peak in the list
+- Prototype: `def find_peak(list_of_integers):`
+- You are not allowed to import any module
+- Your algorithm must have the lowest complexity
+- `6-peak.py` must contain the function
+- `6-peak.txt` must contain the complexity of your algorithm: `O(log(n))`, `O(n)`, `O(nlog(n))` or `O(n2)`
+- **Note**: there may be more than one peak in the list
+
+```
 guillaume@ubuntu:~/0x10$ cat 6-main.py
 #!/usr/bin/python3
 """ Test function find_peak """
@@ -728,41 +608,49 @@ None
 guillaume@ubuntu:~/0x10$ wc -l 6-peak.txt 
 2 6-peak.txt
 guillaume@ubuntu:~/0x10$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x10-python-network_0
-File: 6-peak.py, 6-peak.txt
+**Repo:**
 
-7. Only status code #advanced
-Score: 100.00% (Checks completed: 100.00%)
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x10-python-network_0`
+* File: `6-peak.py, 6-peak.txt`
+
+### [7. Only status code #advanced](./100-status_code.sh)
+
 Write a Bash script that sends a request to a URL passed as an argument, and displays only the status code of the response.
 
-You are not allowed to use any pipe, redirection, etc.
-You are not allowed to use ; and &&
-You have to use curl
+- You are not allowed to use any pipe, redirection, etc.
+- You are not allowed to use `;` and `&&`
+- You have to use `curl`
+
 Please test your script in the container provided, using the web server running on port 5000
 
+```
 guillaume@ubuntu:~/0x10$ ./100-status_code.sh 0.0.0.0:5000 ; echo ""
 200
 guillaume@ubuntu:~/0x10$ 
 guillaume@ubuntu:~/0x10$ ./100-status_code.sh 0.0.0.0:5000/nop ; echo ""
 404
 guillaume@ubuntu:~/0x10$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x10-python-network_0
-File: 100-status_code.sh
+**Repo:**
 
-8. cURL a JSON file #advanced
-Score: 100.00% (Checks completed: 100.00%)
-Write a Bash script that sends a JSON POST request to a URL passed as the first argument, and displays the body of the response.
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x10-python-network_0`
+* File: `100-status_code.sh`
 
-Your script must send a POST request with the contents of a file, passed with the filename as the second argument of the script, in the body of the request
-You have to use curl
+### [8. cURL a JSON file #advanced](./101-post_json.sh)
+
+Write a Bash script that sends a JSON `POST` request to a URL passed as the first argument, and displays the body of the response.
+
+- Your script must send a `POST` request with the contents of a file, passed with the filename as the second argument of the script, in the body of the request
+- You have to use `curl`
+
 Please test your scripts in the container provided, using the web server running on port 5000
 
+```
 guillaume@ubuntu:~/0x10$ cat my_json_0
 {
     "name": "John Doe",
@@ -784,28 +672,34 @@ guillaume@ubuntu:~/0x10$ cat my_json_2
 guillaume@ubuntu:~/0x10$ ./101-post_json.sh 0.0.0.0:5000/route_json my_json_2 ; echo ""
 Not a valid JSON
 guillaume@ubuntu:~/0x10$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x10-python-network_0
-File: 101-post_json.sh
+**Repo:**
 
-9. Catch me if you can! #advanced
-Score: 100.00% (Checks completed: 100.00%)
-Write a Bash script that makes a request to 0.0.0.0:5000/catch_me that causes the server to respond with a message containing You got me!, in the body of the response.
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x10-python-network_0`
+* File: `101-post_json.sh`
 
-You have to use curl
-You are not allow to use echo, cat, etc. to display the final result
+### [9. Catch me if you can! #advanced](./102-catch_me.sh)
+
+Write a Bash script that makes a request to `0.0.0.0:5000/catch_me` that causes the server to respond with a message containing `You got me!`, in the body of the response.
+
+- You have to use `curl`
+- You are not allow to use `echo`, `cat`, etc. to display the final result
+
 Please test your script in the container provided, using the web server running on port 5000
 
+```
 guillaume@ubuntu:~/0x10$ ./102-catch_me.sh ; echo ""
 You got me!
 guillaume@ubuntu:~/0x10$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x10-python-network_0
-File: 102-catch_me.sh
+**Repo:**
+
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x10-python-network_0`
+* File: `102-catch_me.sh`
 
 </details>
 
