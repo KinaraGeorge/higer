@@ -61,6 +61,8 @@ $ sudo apt-get install -y nodejs
 $ sudo npm install semistandard --global
 ```
 
+---
+
 ## Quiz questions
 
 <details>
@@ -209,6 +211,8 @@ myFunction(4);
 - [ ] 4, 3
 
 </details>
+
+---
 
 ## Tasks
 
@@ -729,6 +733,8 @@ guillaume@ubuntu:~/0x13$
 * File: `102-concat.js`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
