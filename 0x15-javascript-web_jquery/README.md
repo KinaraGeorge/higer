@@ -66,11 +66,14 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 <details>
 <summary>Show</summary>
   
-Question #0
+### Question #0
+
 How many HTML tags are present in the following HTML code?
 
-<!DOCTYPE html> is not an HTML tag
-<head></head> is considered one HTML tag.
+- `<!DOCTYPE html>` is not an HTML tag
+- `<head></head>` is considered one HTML tag.
+
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -85,23 +88,21 @@ How many HTML tags are present in the following HTML code?
     </footer>
   </body>
 </html>
+```
 
-4
+- [ ] 4
+- [ ] 5
+- [x] 6
+- [ ] 7
 
+### Question #1
 
-5
-
-
-6
-
-
-7
-
-Question #1
 How many HTML tags are present in the following HTML code?
 
-<!DOCTYPE html> is not an HTML tag
-<head></head> is considered one HTML tag.
+- `<!DOCTYPE html>` is not an HTML tag
+- `<head></head>` is considered one HTML tag.
+
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -124,23 +125,21 @@ How many HTML tags are present in the following HTML code?
     </footer>
   </body>
 </html>
+```
 
-11
+- [ ] 11
+- [x] 12
+- [ ] 13
+- [ ] 14
 
+### Question #2
 
-12
-
-
-13
-
-
-14
-
-Question #2
 How many HTML tags are present in the following HTML code?
 
-<!DOCTYPE html> is not an HTML tag
-<head></head> is considered one HTML tag.
+- `<!DOCTYPE html>` is not an HTML tag
+- `<head></head>` is considered one HTML tag.
+
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -165,23 +164,20 @@ How many HTML tags are present in the following HTML code?
     </footer>
   </body>
 </html>
+```
 
-15
+- [x] 15
+- [ ] 16
+- [ ] 18
+- [ ] 20
 
+### Question #3
 
-16
+In the following code snippet, does the selector called `('.header')` access the HTML tag `<header>`:
 
+(using `document.querySelector` or `$(...)`)?
 
-18
-
-
-20
-
-Question #3
-In the following code snippet, does the selector called ('.header') access the HTML tag <header>:
-
-(using document.querySelector or $(...))?
-
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -206,17 +202,18 @@ In the following code snippet, does the selector called ('.header') access the H
     </footer>
   </body>
 </html>
+```
 
-Yes
+- [ ] Yes
+- [x] No
 
+### Question #4
 
-No
+In the following code snippet, does the selector called `('header')` access the HTML tag `<header>`:
 
-Question #4
-In the following code snippet, does the selector called ('header') access the HTML tag <header>:
+(using `document.querySelector` or `$(...)`)?
 
-(using document.querySelector or $(...))?
-
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -241,17 +238,18 @@ In the following code snippet, does the selector called ('header') access the HT
     </footer>
   </body>
 </html>
+```
 
-Yes
+- [x] Yes
+- [ ] No
 
+### Question #5
 
-No
+In the following code snippet, does the selector called `('body header')` access the HTML tag `<header>`:
 
-Question #5
-In the following code snippet, does the selector called ('body header') access the HTML tag <header>:
+(using `document.querySelector` or `$(...)`)?
 
-(using document.querySelector or $(...))?
-
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -276,17 +274,18 @@ In the following code snippet, does the selector called ('body header') access t
     </footer>
   </body>
 </html>
+```
 
-Yes
+- [x] Yes
+- [ ] No
 
+### Question #6
 
-No
+In the following code snippet, does the selector called `('HeAdER')` access the HTML tag `<header>`:
 
-Question #6
-In the following code snippet, does the selector called ('HeAdER') access the HTML tag <header>:
+(using `document.querySelector` or `$(...)`)?
 
-(using document.querySelector or $(...))?
-
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -311,20 +310,23 @@ In the following code snippet, does the selector called ('HeAdER') access the HT
     </footer>
   </body>
 </html>
+```
 
-Yes
+- [x] Yes
+- [ ] No
 
-
-No
-
-Tips:
+```
+**Tips:**
 Selectors are case insensitive
+```
 
-Question #7
-In the following code snippet, does the selector called ('#header') access the HTML tag <header>:
+### Question #7
 
-(using document.querySelector or $(...))?
+In the following code snippet, does the selector called `('#header')` access the HTML tag `<header>`:
 
+(using `document.querySelector` or `$(...)`)?
+
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -349,17 +351,18 @@ In the following code snippet, does the selector called ('#header') access the H
     </footer>
   </body>
 </html>
+```
 
-Yes
+- [ ] Yes
+- [x] No
 
+### Question #8
 
-No
+In the following code snippet, does the selector called `('.my_header')` access the HTML tag `<header>`:
 
-Question #8
-In the following code snippet, does the selector called ('.my_header') access the HTML tag <header>:
+(using `document.querySelector` or `$(...)`)?
 
-(using document.querySelector or $(...))?
-
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -384,17 +387,18 @@ In the following code snippet, does the selector called ('.my_header') access th
     </footer>
   </body>
 </html>
+```
 
-Yes
+- [x] Yes
+- [ ] No
 
+### Question #9
 
-No
+In the following code snippet, does the selector called `('header.my_header')` access the HTML tag `<header>`:
 
-Question #9
-In the following code snippet, does the selector called ('header.my_header') access the HTML tag <header>:
+(using `document.querySelector` or `$(...)`)?
 
-(using document.querySelector or $(...))?
-
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -419,17 +423,18 @@ In the following code snippet, does the selector called ('header.my_header') acc
     </footer>
   </body>
 </html>
+```
 
-Yes
+- [x] Yes
+- [ ] No
 
+### Question #10
 
-No
+In the following code snippet, does the selector called `('section.my_header')` access the HTML tag `<header>`:
 
-Question #10
-In the following code snippet, does the selector called ('section.my_header') access the HTML tag <header>:
+(using `document.querySelector` or `$(...)`)?
 
-(using document.querySelector or $(...))?
-
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -454,17 +459,18 @@ In the following code snippet, does the selector called ('section.my_header') ac
     </footer>
   </body>
 </html>
+```
 
-Yes
+- [ ] Yes
+- [x] No
 
+### Question #11
 
-No
+In the following code snippet, does the selector called `('#my_header')` access the HTML tag `<header>`:
 
-Question #11
-In the following code snippet, does the selector called ('#my_header') access the HTML tag <header>:
+(using `document.querySelector` or `$(...)`)?
 
-(using document.querySelector or $(...))?
-
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -489,17 +495,18 @@ In the following code snippet, does the selector called ('#my_header') access th
     </footer>
   </body>
 </html>
+```
 
-Yes
+- [ ] Yes
+- [x] No
 
+### Question #12
 
-No
+In the following code snippet, does the selector called `('#my_header')` access the HTML tag `<header>`:
 
-Question #12
-In the following code snippet, does the selector called ('#my_header') access the HTML tag <header>:
+(using `document.querySelector` or `$(...)`)?
 
-(using document.querySelector or $(...))?
-
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -524,17 +531,18 @@ In the following code snippet, does the selector called ('#my_header') access th
     </footer>
   </body>
 </html>
+```
 
-Yes
+- [x] Yes
+- [ ] No
 
+### Question #13
 
-No
+In the following code snippet, does the selector called `('#my_header')` access the HTML tag `<header>`:
 
-Question #13
-In the following code snippet, does the selector called ('#my_header') access the HTML tag <header>:
+(using `document.querySelector` or `$(...)`)?
 
-(using document.querySelector or $(...))?
-
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -559,11 +567,10 @@ In the following code snippet, does the selector called ('#my_header') access th
     </footer>
   </body>
 </html>
+```
 
-Yes
-
-
-No
+- [ ] Yes
+- [x] No
 
 </details>
 
