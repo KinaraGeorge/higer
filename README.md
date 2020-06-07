@@ -2,6 +2,8 @@
 
   This repository contains project for the higher level programming.
 
+---
+
   # Projects
   Projects | Date and time
   ----------- | -----------
@@ -27,7 +29,9 @@
   [Javascript - Objects, Scopes and Closures](./0x13-javascript_objects_scopes_closures) | 10/02/2020, 2 days
   [Javascript - Web scraping](./0x14-javascript-web_scraping) | 11/02/2020, 2 days
   [Javascript - Web JQuery](./0x15-javascript-web_jquery) | 13/02/2020, 2 days
-  
+
+---
+
 ## Author
 ### _Edagr Miguel Rodríguez G._
 
