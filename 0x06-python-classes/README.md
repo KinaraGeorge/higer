@@ -64,6 +64,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 **Documentation is now mandatory!** Each module, class, and method must contain docstring as comments. [Example Google Style Python Docstrings](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
 
+---
+
 ## Quiz questions
 
 <details>
@@ -257,6 +259,8 @@ What do these lines print?
 - [x] ‘no name’
 
 </details>
+
+---
 
 ## Tasks
 
@@ -854,6 +858,8 @@ Disassembly of circumference:
 * File: `103-magic_class.py`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
