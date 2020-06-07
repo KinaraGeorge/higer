@@ -57,6 +57,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - All your files must be executable
 - The length of your files will be tested using `wc`
 
+---
+
 ## Quiz questions
 
 <details>
@@ -267,6 +269,8 @@ print(u.id)
 - [ ] 98
 
 </details>
+
+---
 
 ## Tasks
 
@@ -940,6 +944,8 @@ julien@ubuntu:~/0x08. N Queens$
 * File: `101-nqueens.py`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
