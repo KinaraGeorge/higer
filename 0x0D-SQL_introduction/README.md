@@ -119,6 +119,8 @@ $
 
 **In the container, credentials are `root/root`**
 
+---
+
 ## Quiz questions
 
 <details>
@@ -267,6 +269,8 @@ How do you list all `users` records with `age > 21` in this table?
 - [ ] SELECT * FROM users WHERE age BETWEEN 21 AND 89;
 
 </details>
+
+---
 
 ## Tasks
 
@@ -827,6 +831,8 @@ guillaume@ubuntu:~/$
 * File: `103-max_state.sql`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
