@@ -37,6 +37,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - You must use [get](https://docs.python.org/3.4/library/stdtypes.html#dict.get) to access to dictionary value by key (it won’t throw an exception if the key doesn’t exist in the dictionary)
 - Your code should not be executed when imported (by using `if __name__ == "__main__":`)
 
+---
+
 ## Tasks
 
 <details>
@@ -376,6 +378,8 @@ guillaume@ubuntu:~/0x11$
 * File: `103-search_twitter.py`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
