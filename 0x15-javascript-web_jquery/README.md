@@ -581,14 +581,16 @@ In the following code snippet, does the selector called `('#my_header')` access 
 <details>
 <summary>View Contents</summary>
 
-0. No jQuery mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Javascript script that updates the text color of the HTML tag HEADER to red (#FF0000):
+### [0. No jQuery](./0-script.js)
 
-You must use document.querySelector to select the HTML tag
-You can’t use the jQuery API
+Write a Javascript script that updates the text color of the HTML tag `HEADER` to red (`#FF0000`):
+
+- You must use `document.querySelector` to select the HTML tag
+- You can’t use the jQuery API
+
 Please test with this HTML file in your browser:
 
+```
 guillaume@ubuntu:~/0x15$ cat 0-main.html 
 <!DOCTYPE html>
 <html lang="en">
@@ -606,20 +608,24 @@ guillaume@ubuntu:~/0x15$ cat 0-main.html
   </body>
 </html>
 guillaume@ubuntu:~/0x15$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x15-javascript-web_jquery
-File: 0-script.js
+**Repo:**
 
-1. With jQuery mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Javascript script that updates the text color of the HTML tag HEADER to red (#FF0000):
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x15-javascript-web_jquery`
+* File: `0-script.js`
 
-You can’t use document.querySelector to select the HTML tag
-You must use the jQuery API
+### [1. With jQuery](./1-script.js)
+
+Write a Javascript script that updates the text color of the HTML tag `HEADER` to red (`#FF0000`):
+
+- You can’t use `document.querySelector` to select the HTML tag
+- You must use the jQuery API
+
 Please test with this HTML file in your browser:
 
+```
 guillaume@ubuntu:~/0x15$ cat 1-main.html 
 <!DOCTYPE html>
 <html lang="en">
@@ -638,20 +644,24 @@ guillaume@ubuntu:~/0x15$ cat 1-main.html
   </body>
 </html>
 guillaume@ubuntu:~/0x15$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x15-javascript-web_jquery
-File: 1-script.js
+**Repo:**
 
-2. Click and turn red mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Javascript script that updates the text color of the HTML tag HEADER to red (#FF0000) when the user clicks on the tag DIV#red_header:
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x15-javascript-web_jquery`
+* File: `1-script.js`
 
-You can’t use document.querySelector to select the HTML tag
-You must use the jQuery API
+### [2. Click and turn red](./2-script.js)
+
+Write a Javascript script that updates the text color of the HTML tag `HEADER` to red (`#FF0000`) when the user clicks on the tag `DIV#red_header`:
+
+- You can’t use `document.querySelector` to select the HTML tag
+- You must use the jQuery API
+
 Please test with this HTML file in your browser:
 
+```
 guillaume@ubuntu:~/0x15$ cat 2-main.html 
 <!DOCTYPE html>
 <html lang="en">
@@ -671,20 +681,24 @@ guillaume@ubuntu:~/0x15$ cat 2-main.html
   </body>
 </html>
 guillaume@ubuntu:~/0x15$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x15-javascript-web_jquery
-File: 2-script.js
+**Repo:**
 
-3. Add `.red` class mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Javascript script that adds the class red to the HTML tag HEADER to red (#FF0000) when the user clicks on the tag DIV#red_header:
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x15-javascript-web_jquery`
+* File: `2-script.js`
 
-You can’t use document.querySelector to select the HTML tag
-You must use the jQuery API
+### [3. Add `.red` class](./3-script.js)
+
+Write a Javascript script that adds the class `red` to the HTML tag `HEADER` to red (`#FF0000`) when the user clicks on the tag `DIV#red_header`:
+
+- You can’t use `document.querySelector` to select the HTML tag
+- You must use the jQuery API
+
 Please test with this HTML file in your browser:
 
+```
 guillaume@ubuntu:~/0x15$ cat 3-main.html 
 <!DOCTYPE html>
 <html lang="en">
@@ -709,22 +723,26 @@ guillaume@ubuntu:~/0x15$ cat 3-main.html
   </body>
 </html>
 guillaume@ubuntu:~/0x15$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x15-javascript-web_jquery
-File: 3-script.js
+**Repo:**
 
-4. Toggle classes mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Javascript script that toggles the class of the HTML tag HEADER to red (#FF0000) when the user clicks on the tag DIV#toggle_header:
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x15-javascript-web_jquery`
+* File: `3-script.js`
 
-The HEADER tag must always have one class: red or green, never both in the same time, never empty.
-If the current class is red, when the user click on DIV#toggle_header, the class must be updated to green ; and the reverse.
-You can’t use document.querySelector to select the HTML tag
-You must use the jQuery API
+### [4. Toggle classes](./4-script.js)
+
+Write a Javascript script that toggles the class of the HTML tag `HEADER` to red (`#FF0000`) when the user clicks on the tag `DIV#toggle_header`:
+
+- The `HEADER` tag must always have one class: `red` or `green`, never both in the same time, never empty.
+- If the current class is `red`, when the user click on `DIV#toggle_header`, the class must be updated to `green` ; and the reverse.
+- You can’t use `document.querySelector` to select the HTML tag
+- You must use the jQuery API
+
 Please test with this HTML file in your browser:
 
+```
 guillaume@ubuntu:~/0x15$ cat 4-main.html 
 <!DOCTYPE html>
 <html lang="en">
@@ -752,22 +770,26 @@ guillaume@ubuntu:~/0x15$ cat 4-main.html
   </body>
 </html>
 guillaume@ubuntu:~/0x15$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x15-javascript-web_jquery
-File: 4-script.js
+**Repo:**
 
-5. List of elements mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Javascript script that adds a LI element to a list when the user clicks on the tag DIV#add_item:
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x15-javascript-web_jquery`
+* File: `4-script.js`
 
-The new element must be: <li>Item</li>
-The new element must be added to UL.my_list
-You can’t use document.querySelector to select the HTML tag
-You must use the jQuery API
+### [5. List of elements](./5-script.js)
+
+Write a Javascript script that adds a `LI` element to a list when the user clicks on the tag `DIV#add_item`:
+
+- The new element must be: `<li>Item</li>`
+- The new element must be added to `UL.my_list`
+- You can’t use `document.querySelector` to select the HTML tag
+- You must use the jQuery API
+
 Please test with this HTML file in your browser:
 
+```
 guillaume@ubuntu:~/0x15$ cat 5-main.html 
 <!DOCTYPE html>
 <html lang="en">
@@ -792,20 +814,24 @@ guillaume@ubuntu:~/0x15$ cat 5-main.html
   </body>
 </html>
 guillaume@ubuntu:~/0x15$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x15-javascript-web_jquery
-File: 5-script.js
+**Repo:**
 
-6. Change the text mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Javascript script that updates the text of the HTML tag HEADER to “New Header!!!” when the user clicks on DIV#update_header
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x15-javascript-web_jquery`
+* File: `5-script.js`
 
-You can’t use document.querySelector to select the HTML tag
-You must use the jQuery API
+### [6. Change the text](./6-script.js)
+
+Write a Javascript script that updates the text of the HTML tag `HEADER` to “New Header!!!” when the user clicks on `DIV#update_header`
+
+- You can’t use `document.querySelector` to select the HTML tag
+- You must use the jQuery API
+
 Please test with this HTML file in your browser:
 
+```
 guillaume@ubuntu:~/0x15$ cat 6-main.html 
 <!DOCTYPE html>
 <html lang="en">
@@ -827,21 +853,25 @@ guillaume@ubuntu:~/0x15$ cat 6-main.html
   </body>
 </html>
 guillaume@ubuntu:~/0x15$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x15-javascript-web_jquery
-File: 6-script.js
+**Repo:**
 
-7. Star wars character mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Javascript script that fetches and replaces the name of this URL: https://swapi-api.hbtn.io/api/people/5/?format=json
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x15-javascript-web_jquery`
+* File: `6-script.js`
 
-The name must be displayed in the HTML tag DIV#character
-You can’t use document.querySelector to select the HTML tag
-You must use the jQuery API
+### [7. Star wars character](./7-script.js)
+
+Write a Javascript script that fetches and replaces the `name` of this URL: `https://swapi-api.hbtn.io/api/people/5/?format=json`
+
+- The name must be displayed in the HTML tag `DIV#character`
+- You can’t use `document.querySelector` to select the HTML tag
+- You must use the jQuery API
+
 Please test with this HTML file in your browser:
 
+```
 guillaume@ubuntu:~/0x15$ cat 7-main.html 
 <!DOCTYPE html>
 <html lang="en">
@@ -863,21 +893,25 @@ guillaume@ubuntu:~/0x15$ cat 7-main.html
   </body>
 </html>
 guillaume@ubuntu:~/0x15$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x15-javascript-web_jquery
-File: 7-script.js
+**Repo:**
 
-8. Star Wars movies mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Javascript script that fetches and lists all movies title by using this URL: https://swapi-api.hbtn.io/api/films/?format=json
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x15-javascript-web_jquery`
+* File: `7-script.js`
 
-All movie titles must be list in the HTML tag UL#list_movies
-You can’t use document.querySelector to select the HTML tag
-You must use the jQuery API
+### [8. Star Wars movies](./8-script.js)
+
+Write a Javascript script that fetches and lists all movies `title` by using this URL: `https://swapi-api.hbtn.io/api/films/?format=json`
+
+- All movie titles must be list in the HTML tag `UL#list_movies`
+- You can’t use `document.querySelector` to select the HTML tag
+- You must use the jQuery API
+
 Please test with this HTML file in your browser:
 
+```
 guillaume@ubuntu:~/0x15$ cat 8-main.html 
 <!DOCTYPE html>
 <html lang="en">
@@ -900,22 +934,26 @@ guillaume@ubuntu:~/0x15$ cat 8-main.html
   </body>
 </html>
 guillaume@ubuntu:~/0x15$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x15-javascript-web_jquery
-File: 8-script.js
+**Repo:**
 
-9. Say Hello! mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Javascript script that fetches from https://fourtonfish.com/hellosalut/?lang=fr and displays the value of hello from that fetch in the HTML’s tag DIV#hello.
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x15-javascript-web_jquery`
+* File: `8-script.js`
 
-The translation of “hello” must be display in the HTML tag DIV#hello
-You can’t use document.querySelector to select the HTML tag
-You must use the jQuery API
-Your script must work when it is imported from the HEAD tag
+### [9. Say Hello!](./9-script.js)
+
+Write a Javascript script that fetches from `https://fourtonfish.com/hellosalut/?lang=fr` and displays the value of `hello` from that fetch in the HTML’s tag `DIV#hello`.
+
+- The translation of “hello” must be display in the HTML tag `DIV#hello`
+- You can’t use `document.querySelector` to select the HTML tag
+- You must use the jQuery API
+- Your script must work when it is imported from the `HEAD` tag
+
 Please test with this HTML file in your browser:
 
+```
 guillaume@ubuntu:~/0x15$ cat 9-main.html 
 <!DOCTYPE html>
 <html lang="en">
@@ -937,21 +975,25 @@ guillaume@ubuntu:~/0x15$ cat 9-main.html
   </body>
 </html>
 guillaume@ubuntu:~/0x15$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x15-javascript-web_jquery
-File: 9-script.js
+**Repo:**
 
-10. No jQuery - document loaded #advanced
-Score: 100.00% (Checks completed: 100.00%)
-Write a Javascript script that updates the text color of the HTML tag HEADER to red (#FF0000):
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x15-javascript-web_jquery`
+* File: `9-script.js`
 
-You must use document.querySelector to select the HTML tag
-You can’t use the jQuery API
-Note: Your script must be imported from the HEAD tag, not at the end of the HTML
+### [10. No jQuery - document loaded #advanced](./100-script.js)
+
+Write a Javascript script that updates the text color of the HTML tag `HEADER` to red (`#FF0000`):
+
+- You must use `document.querySelector` to select the HTML tag
+- You can’t use the jQuery API
+- Note: Your script must be imported from the `HEAD` tag, not at the end of the HTML
+
 Please test with this HTML file in your browser:
 
+```
 guillaume@ubuntu:~/0x15$ cat 100-main.html 
 <!DOCTYPE html>
 <html lang="en">
@@ -969,26 +1011,30 @@ guillaume@ubuntu:~/0x15$ cat 100-main.html
   </body>
 </html>
 guillaume@ubuntu:~/0x15$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x15-javascript-web_jquery
-File: 100-script.js
+**Repo:**
 
-11. List, add, remove #advanced
-Score: 0.00% (Checks completed: 0.00%)
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x15-javascript-web_jquery`
+* File: `100-script.js`
+
+### 11. List, add, remove #advanced
+
 Write a Javascript script that adds, removes and clears LI elements from a list when the user clicks:
 
-The new element must be: <li>Item</li>
-The new element must be added to UL.my_list
-When the user clicks on DIV#add_item: a new element is added to the list
-When the user clicks on DIV#remove_item: a last element is removed to the list
-When the user clicks on DIV#clear_list: all elements of the list are removed
-You can’t use document.querySelector to select the HTML tag
-You must use the jQuery API
-You script must be work when it imported from the HEAD tag
+- The new element must be: `<li>Item</li>`
+- The new element must be added to `UL.my_list`
+- When the user clicks on `DIV#add_item`: a new element is added to the list
+- When the user clicks on `DIV#remove_item`: a last element is removed to the list
+- When the user clicks on `DIV#clear_list`: all elements of the list are removed
+- You can’t use `document.querySelector` to select the HTML tag
+- You must use the jQuery API
+- You script must be work when it imported from the `HEAD` tag
+
 Please test with this HTML file in your browser:
 
+```
 guillaume@ubuntu:~/0x15$ cat 101-main.html 
 <!DOCTYPE html>
 <html lang="en">
@@ -1015,25 +1061,29 @@ guillaume@ubuntu:~/0x15$ cat 101-main.html
   </body>
 </html>
 guillaume@ubuntu:~/0x15$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x15-javascript-web_jquery
-File: 101-script.js
+**Repo:**
 
-12. Say hello to everybody! #advanced
-Score: 0.00% (Checks completed: 0.00%)
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x15-javascript-web_jquery`
+* File: `101-script.js`
+
+### 12. Say hello to everybody! #advanced
+
 Write a Javascript script that fetches and prints how to say “Hello” depending of the language
 
-You should use this API service: https://www.fourtonfish.com/hellosalut/hello/
-The language code will be the value entered in the tag INPUT#language_code (ex: es, fr, en etc.)
-The translation must be fetch when the user clicks on INPUT#btn_translate
-The translation of “Hello” must be display in the HTML tag DIV#hello
-You can’t use document.querySelector to select the HTML tag
-You must use the jQuery API
-You script must be work when it imported from the HEAD tag
+- You should use this API service: `https://www.fourtonfish.com/hellosalut/hello/`
+- The language code will be the value entered in the tag `INPUT#language_code` (ex: `es`, `fr`, `en` etc.)
+- The translation must be fetch when the user clicks on `INPUT#btn_translate`
+- The translation of “Hello” must be display in the HTML tag `DIV#hello`
+- You can’t use `document.querySelector` to select the HTML tag
+- You must use the jQuery API
+- You script must be work when it imported from the `HEAD` tag
+
 Please test with this HTML file in your browser:
 
+```
 guillaume@ubuntu:~/0x15$ cat 102-main.html 
 <!DOCTYPE html>
 <html lang="en">
@@ -1058,25 +1108,29 @@ guillaume@ubuntu:~/0x15$ cat 102-main.html
   </body>
 </html>
 guillaume@ubuntu:~/0x15$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x15-javascript-web_jquery
-File: 102-script.js
+**Repo:**
 
-13. And press ENTER #advanced
-Score: 0.00% (Checks completed: 0.00%)
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x15-javascript-web_jquery`
+* File: `102-script.js`
+
+### 13. And press ENTER #advanced
+
 Write a Javascript script that fetches and prints how to say “Hello” depending of the language
 
-You should use this API service: https://www.fourtonfish.com/hellosalut/hello/
-The language code will be the value entered in the tag INPUT#language_code (ex: es, fr, en etc.)
-The translation must be fetch when the user clicks on INPUT#btn_translate OR presses ENTER when the focus is on INPUT#language_code
-The translation of “Hello” must be display in the HTML tag DIV#hello
-You can’t use document.querySelector to select the HTML tag
-You must use the jQuery API
-You script must be work when it imported from the HEAD tag
+- You should use this API service: `https://www.fourtonfish.com/hellosalut/hello/`
+- The language code will be the value entered in the tag `INPUT#language_code` (ex: `es`, `fr`, `en` etc.)
+- The translation must be fetch when the user clicks on `INPUT#btn_translate` OR presses `ENTER` when the focus is on `INPUT#language_code`
+- The translation of “Hello” must be display in the HTML tag `DIV#hello`
+- You can’t use `document.querySelector` to select the HTML tag
+- You must use the jQuery API
+- You script must be work when it imported from the `HEAD` tag
+
 Please test with this HTML file in your browser:
 
+```
 guillaume@ubuntu:~/0x15$ cat 103-main.html 
 <!DOCTYPE html>
 <html lang="en">
@@ -1101,11 +1155,13 @@ guillaume@ubuntu:~/0x15$ cat 103-main.html
   </body>
 </html>
 guillaume@ubuntu:~/0x15$ 
-Repo:
+```
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x15-javascript-web_jquery
-File: 103-script.js
+**Repo:**
+
+* GitHub repository: `holbertonschool-higher_level_programming`
+* Directory: `0x15-javascript-web_jquery`
+* File: `103-script.js`
 
 </details>
 
