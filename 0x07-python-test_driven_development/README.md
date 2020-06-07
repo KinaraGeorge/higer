@@ -57,6 +57,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - All your functions should have a documentation (`python3 -c 'print(__import__("my_module").my_function.__doc__)'`)
 - We strongly encourage you to work together on test cases, so that you don’t miss any edge case
 
+---
+
 ## Quiz questions
 
 <details>
@@ -177,6 +179,8 @@ def uniq(list):
 - [x] not a list argument (ex: passing a dictionary to the method)
 
 </details>
+
+---
 
 ## Tasks
 
@@ -654,6 +658,8 @@ julien@ubuntu:~/0x07. Pyhton Strings$
 * File: `102-python.c`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
