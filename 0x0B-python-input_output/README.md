@@ -58,6 +58,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - All your functions (inside and outside a class) should have a documentation (`python3 -c 'print(__import__("my_module").my_function.__doc__)'` and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`)
 - We strongly encourage you to work together on test cases, so that you don’t miss any edge case
 
+---
+
 ## Tasks
 
 <details>
@@ -1021,6 +1023,8 @@ Write a script that finds a string in the heap of a running process, and replace
 * File: `read_write_heap.py`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
