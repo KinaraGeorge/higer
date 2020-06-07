@@ -86,6 +86,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - No Shebang
 - All your files should end with a new line
 
+---
+
 ## Tasks
 
 <details>
@@ -747,6 +749,8 @@ Assuming we are using a CPython implementation of Python3 with default options/c
 * File: `106-line1.txt, 106-line2.txt, 106-line3.txt, 106-line4.txt, 106-line5.txt`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
