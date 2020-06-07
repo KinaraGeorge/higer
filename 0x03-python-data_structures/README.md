@@ -54,6 +54,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - Don’t forget to push your header file
 - All your header files should be include guarded
 
+---
+
 ## Quiz questions
 
 <details>
@@ -207,6 +209,8 @@ What do these lines print?
 - [ ] b
 
 </details>
+
+---
 
 ## Tasks
 
@@ -911,6 +915,8 @@ julien@CPython:~/CPython$
 * File: `100-print_python_list_info.c`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
