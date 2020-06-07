@@ -126,6 +126,8 @@ id  name
 $
 ```
 
+---
+
 ## Quiz questions
 
 <details>
@@ -188,6 +190,8 @@ Which JOIN type doesn’t exist? (please select all correct answers)
 - [x] FULL INNER
 
 </details>
+
+---
 
 ## Tasks
 
@@ -910,6 +914,8 @@ guillaume@ubuntu:~/$
 * File: `103-rating_genres.sql`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
