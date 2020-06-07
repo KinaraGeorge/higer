@@ -153,6 +153,8 @@ Don’t hesitate to delete `/usr/bin/pep8` and replace by one of those `pep8.py`
 
 Finally, if you can’t make it work, please use the “container-on-demand” tool to “PEP8” your files in a pre-configured container.
 
+---
+
 ## Quiz questions
 
 <details>
@@ -291,6 +293,8 @@ What does this command line print?
 - [ ] Nothing
 
 </details>
+
+---
 
 ## Tasks
 
@@ -822,6 +826,8 @@ Write the Python function `def magic_calculation(a, b):` that does exactly the s
 * File: `102-magic_calculation.py`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
