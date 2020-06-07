@@ -39,6 +39,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - All your files must be executable
 - The length of your files will be tested using `wc`
 
+---
+
 ## Quiz questions
 
 <details>
@@ -138,6 +140,8 @@ What do these lines print?
 - [ ] 891
 
 </details>
+
+---
 
 ## Tasks
 
@@ -592,6 +596,8 @@ guillaume@ubuntu:~/0x02$
 * File: `103-fast_alphabet.py`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
