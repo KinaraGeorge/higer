@@ -70,6 +70,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 *Note*: you do not need to understand lists yet.
 
+---
+
 ## Quiz questions
 
 <details>
@@ -211,6 +213,8 @@ for i in range(2, 10, 2):
 - [x] 2 4 6 8
 
 </details>
+
+---
 
 ## Tasks
 
@@ -923,6 +927,8 @@ Write the Python function `def magic_calculation(a, b, c):` that does exactly th
 * File: `102-magic_calculation.py`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
