@@ -50,6 +50,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - All your classes should be documented: `python3 -c 'print(__import__("my_module").MyClass.__doc__)'`
 - All your functions (inside and outside a class) should be documented: `python3 -c 'print(__import__("my_module").my_function.__doc__)'` and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`
 
+---
+
 ## Quiz questions
 
 <details>
@@ -437,6 +439,8 @@ What is the `curl` option to save the body of the resulting response to a file?
 
 </details>
 
+---
+
 ## Tasks
 
 <details>
@@ -702,6 +706,8 @@ guillaume@ubuntu:~/0x10$
 * File: `102-catch_me.sh`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
