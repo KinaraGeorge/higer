@@ -5,7 +5,7 @@
 ---
 
   # Projects
-  Projects | Date and time
+  Projects | Date and duration
   ----------- | -----------
   [Python - Hello, World](./0x00-python-hello_world) | 09/09/2019, 2 days
   [Python - if/else, loops, functions](./0x01-python-if_else_loops_functions) | 10/09/2019, 2 days  
