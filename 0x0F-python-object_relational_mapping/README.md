@@ -132,6 +132,8 @@ moved in a future release.")
 
 You can ignore it.
 
+---
+
 ## Tasks
 
 <details>
@@ -938,6 +940,8 @@ guillaume@ubuntu:~/0x0F$
 * File: `102-relationship_cities_states_list.py`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
