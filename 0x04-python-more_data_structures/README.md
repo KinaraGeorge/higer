@@ -43,6 +43,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - All your files must be executable
 - The length of your files will be tested using `wc`
 
+---
+
 ## Quiz questions
 
 <details>
@@ -220,6 +222,8 @@ What do these lines print?
 - [x] Hello Holberton School 98
 
 </details>
+
+---
 
 ## Tasks
 
@@ -995,6 +999,8 @@ julien@ubuntu:~/CPython$
 * File: `103-python.c`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
