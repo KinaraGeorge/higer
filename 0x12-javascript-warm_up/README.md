@@ -80,6 +80,8 @@ $ sudo apt-get install -y nodejs
 $ sudo npm install semistandard --global
 ```
 
+---
+
 ## Quiz questions
 
 <details>
@@ -139,6 +141,8 @@ What does `const` mean? (please check all true answers)
 - [ ] It’s the keyword to define a variable that can be re-assign during the execution
 
 </details>
+
+---
 
 ## Tasks
 
@@ -650,6 +654,8 @@ guillaume@ubuntu:~/0x12$
 * File: `103-object_fct.js`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
