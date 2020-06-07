@@ -59,6 +59,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 The “[Python 3 Object-oriented Programming](https://www.amazon.com/Python-3-Object-Oriented-Programming/dp/1849511268)” book rec
 
+---
+
 ## Quiz questions
 
 <details>
@@ -338,6 +340,8 @@ print(u.id)
 - [ ] 1
 
 </details>
+
+---
 
 ## Tasks
 
@@ -853,6 +857,8 @@ guillaume@ubuntu:~/0x0A$
 * File: `101-add_attribute.py`
 
 </details>
+
+---
 
 ## Author
 ### _Edgar Miguel Rodríguez G._
